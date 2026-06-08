@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="theme-color" content="#F2EDE3" />
-  <title>Prova de imagens por contexto - Homo Ludens Blog</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="noindex,nofollow" name="robots"/>
+<meta content="#F2EDE3" name="theme-color"/>
+<title>Prova de imagens por contexto - Homo Ludens Blog</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -23,10 +24,10 @@
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,760&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,760&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Source+Sans+3:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Source Sans 3', sans-serif; background: #F2EDE3; color: #2B2B2B; }
     .display { font-family: 'Fraunces', serif; }
@@ -34,134 +35,144 @@
     .frame { clip-path: polygon(0 0, 100% 0, 100% 92%, 96% 100%, 0 100%); }
     .grain { background-image: radial-gradient(rgba(43,43,43,.08) 1px, transparent 1px); background-size: 14px 14px; }
   </style>
-</head>
+
+<!-- GA4: reemplazar GA_MEASUREMENT_ID por el ID real antes de habilitar -->
+<script>
+    window.GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "";
+    (function () {
+      var id = window.GA_MEASUREMENT_ID;
+      var dnt = navigator.doNotTrack === "1" || window.doNotTrack === "1";
+      if (!id || dnt) return;
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', id, { anonymize_ip: true });
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
+      document.head.appendChild(script);
+    })();
+  </script>
+<link href="https://www.homoludens.blog/prova-imagens-contexto.html" rel="canonical"/><meta content="O arquivo já pensa antes do texto. prova 02 / imagem como linguagem" name="description"/><meta content="Prova de imagens por contexto - Homo Ludens Blog" property="og:title"/><meta content="O arquivo já pensa antes do texto. prova 02 / imagem como linguagem" property="og:description"/><meta content="website" property="og:type"/><meta content="https://www.homoludens.blog/prova-imagens-contexto.html" property="og:url"/><meta content="pt_BR" property="og:locale"/><meta content="summary" name="twitter:card"/><link href="https://www.homoludens.blog/prova-imagens-contexto.html" hreflang="pt-BR" rel="alternate"/><link href="https://www.homoludens.blog/prova-imagens-contexto.html" hreflang="x-default" rel="alternate"/></head>
 <body>
-  <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-grafite focus:px-4 focus:py-2 focus:text-claro">Pular para o conteúdo</a>
-
-  <header class="sticky top-0 z-40 border-b border-grafite/15 bg-papel/92 px-5 py-4 backdrop-blur md:px-8">
-    <div class="mx-auto flex max-w-7xl items-center justify-between gap-5">
-      <a href="./" class="group flex items-center gap-3">
-        <span class="grid h-11 w-11 place-items-center rounded-full bg-grafite text-sm font-black text-claro">HL</span>
-        <span><strong>Homo Ludens Blog</strong><br><span class="text-sm text-tinta">prova visual por contexto</span></span>
-      </a>
-      <nav class="hidden gap-6 text-sm font-bold text-tinta md:flex" aria-label="Navegação da prova">
-        <a href="#manifesto" class="hover:text-grafite">Manifesto</a>
-        <a href="#metodo" class="hover:text-grafite">Método</a>
-        <a href="#territorio" class="hover:text-grafite">Território</a>
-        <a href="#arquivo" class="hover:text-grafite">Arquivo</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="conteudo">
-    <section class="relative overflow-hidden px-5 py-16 md:px-8 md:py-24">
-      <div class="absolute inset-0 grain opacity-40"></div>
-      <div class="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-end">
-        <div>
-          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-folha">prova 02 / imagem como linguagem</p>
-          <h1 class="display mt-5 max-w-4xl text-[4.8rem] font-semibold leading-[.84] tracking-[-.065em] md:text-[8.8rem]">O arquivo já pensa antes do texto.</h1>
-          <p class="mt-7 max-w-2xl text-2xl leading-9 text-tinta">Esta prova testa imagens segundo contexto editorial. Não procura a foto mais bonita. Procura a imagem certa para cada pergunta.</p>
-        </div>
-        <figure class="frame border border-grafite bg-grafite p-3 shadow-papel">
-          <img src="assets/prova-roda-dialogo-gesto.jpg" alt="Roda de diálogo com gesto expressivo em contexto de oficina" class="h-[460px] w-full object-cover md:h-[620px]" />
-          <figcaption class="mono bg-grafite px-3 py-3 text-xs uppercase tracking-[.2em] text-sol">contexto dominante: escuta, gesto e formação de base</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="border-y border-grafite bg-grafite px-5 py-8 text-claro md:px-8">
-      <div class="mx-auto grid max-w-7xl gap-5 md:grid-cols-4">
-        <p><strong>01.</strong> Manifesto visual</p>
-        <p><strong>02.</strong> Método em roda</p>
-        <p><strong>03.</strong> Território e educação popular</p>
-        <p><strong>04.</strong> Arquivo e prova institucional</p>
-      </div>
-    </section>
-
-    <section id="manifesto" class="px-5 py-16 md:px-8 md:py-24">
-      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
-        <div>
-          <p class="mono text-xs uppercase tracking-[.24em] text-terra">manifesto</p>
-          <h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">Futebol como palavra pública.</h2>
-          <p class="mt-6 text-xl leading-8 text-tinta">A imagem da palestra com camisas sustenta a tese da casa: a bola não entra como adorno esportivo. Ela entra como arquivo, fala, cena, memória e método.</p>
-          <p class="mt-5 border-l-4 border-terra bg-claro p-5 text-lg font-bold shadow-papel">Uso recomendado: home principal, abertura do manifesto, página de apresentação autoral.</p>
-        </div>
-        <figure class="border border-grafite bg-claro p-4 shadow-papel">
-          <img src="assets/prova-palestra-camisas.jpg" alt="Palestra com bola no pé e camisas de futebol expostas" class="h-[680px] w-full object-cover object-[50%_42%]" />
-        </figure>
-      </div>
-    </section>
-
-    <section id="metodo" class="bg-claro px-5 py-16 md:px-8 md:py-24">
-      <div class="mx-auto max-w-7xl">
-        <div class="max-w-3xl">
-          <p class="mono text-xs uppercase tracking-[.24em] text-folha">método</p>
-          <h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">Quando a bola fica no centro, a conversa muda de lugar.</h2>
-        </div>
-        <div class="mt-10 grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
-          <figure class="border border-grafite bg-papel p-4 shadow-papel">
-            <img src="assets/prova-roda-a-bola-conecta.jpg" alt="Roda A Bola Conecta com bolas no centro" class="h-[560px] w-full object-cover" />
-            <figcaption class="mt-3 text-sm font-bold text-tinta">Contexto: metodologia participativa, A Bola Conecta, escuta horizontal.</figcaption>
-          </figure>
-          <div class="grid gap-6">
-            <article class="bg-folha p-7 text-claro shadow-papel">
-              <h3 class="display text-4xl font-semibold">Imagem que explica sem legenda</h3>
-              <p class="mt-4 text-lg leading-8 text-claro/82">Roda, chão, bola, projeção e banner. O conjunto comunica método antes do parágrafo.</p>
-            </article>
-            <article class="border border-linha bg-papel p-7">
-              <h3 class="display text-4xl font-semibold">Função editorial</h3>
-              <p class="mt-4 text-lg leading-8 text-tinta">Boa para seção de metodologia, post sobre A Bola Conecta, página de serviços formativos ou apresentação institucional.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="territorio" class="px-5 py-16 md:px-8 md:py-24">
-      <div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-3">
-        <article class="lg:col-span-2">
-          <p class="mono text-xs uppercase tracking-[.24em] text-barro">território</p>
-          <h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">O corpo encontra uma paisagem e a paisagem vira pergunta.</h2>
-          <figure class="mt-8 border border-grafite bg-grafite p-4 shadow-papel">
-            <img src="assets/prova-paulo-freire-recife.jpg" alt="Registro público com cartaz Paulo Freire Vive em Recife" class="h-[720px] w-full object-cover object-center" />
-          </figure>
-        </article>
-        <aside class="grid gap-6 lg:pt-28">
-          <figure class="border border-linha bg-claro p-4 shadow-papel">
-            <img src="assets/prova-cabeca-praia.jpg" alt="Pessoa cabeceando uma bola na praia" class="h-[360px] w-full object-cover" />
-            <figcaption class="mt-3 text-sm font-bold text-tinta">Corpo, bola, mar e suspensão. Imagem para ensaio poético.</figcaption>
-          </figure>
-          <div class="bg-sol p-7 text-grafite shadow-papel">
-            <p class="mono text-xs uppercase tracking-[.2em]">uso recomendado</p>
-            <p class="display mt-3 text-3xl font-semibold">Educação popular, território, viagem, memória latino-americana.</p>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="arquivo" class="bg-grafite px-5 py-16 text-claro md:px-8 md:py-24">
-      <div class="mx-auto max-w-7xl">
-        <p class="mono text-xs uppercase tracking-[.24em] text-sol">arquivo e prova</p>
-        <h2 class="display mt-4 max-w-5xl text-5xl font-semibold leading-none md:text-7xl">Nem toda imagem precisa ser hero. Algumas precisam provar caminho.</h2>
-        <div class="mt-10 grid gap-5 md:grid-cols-2">
-          <figure class="bg-claro p-4 text-grafite">
-            <img src="assets/prova-territorio-laboratorio-palco.jpg" alt="Palestra em palco sobre território como laboratório" class="h-[420px] w-full object-cover" />
-            <figcaption class="mt-4 text-lg font-bold">Palco público: bom para mostrar incidência, programa, política e território.</figcaption>
-          </figure>
-          <figure class="bg-claro p-4 text-grafite">
-            <img src="assets/prova-crianca-bola-cabeca.jpg" alt="Criança equilibrando bola na cabeça em contexto comunitário" class="h-[420px] w-full object-cover object-[50%_42%]" />
-            <figcaption class="mt-4 text-lg font-bold">Infância e brincadeira: forte para ludicidade, cuidado e registro de campo.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-grafite px-5 py-8 md:px-8">
-    <div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-tinta md:flex-row md:items-center md:justify-between">
-      <p><strong>Homo Ludens Blog</strong> - prova visual interna publicável.</p>
-      <a href="./" class="font-black text-grafite underline decoration-sol decoration-2 underline-offset-4">Voltar para o preview</a>
-    </div>
-  </footer>
+<a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-grafite focus:px-4 focus:py-2 focus:text-claro" href="#conteudo">Pular para o conteúdo</a>
+<header class="sticky top-0 z-40 border-b border-grafite/15 bg-papel/92 px-5 py-4 backdrop-blur md:px-8">
+<div class="mx-auto flex max-w-7xl items-center justify-between gap-5">
+<a class="group flex items-center gap-3" href="./">
+<span class="grid h-11 w-11 place-items-center rounded-full bg-grafite text-sm font-black text-claro">HL</span>
+<span><strong>Homo Ludens Blog</strong><br/><span class="text-sm text-tinta">prova visual por contexto</span></span>
+</a>
+<nav aria-label="Navegação da prova" class="hidden gap-6 text-sm font-bold text-tinta md:flex">
+<a class="hover:text-grafite" href="#manifesto">Manifesto</a>
+<a class="hover:text-grafite" href="#metodo">Método</a>
+<a class="hover:text-grafite" href="#territorio">Território</a>
+<a class="hover:text-grafite" href="#arquivo">Arquivo</a>
+</nav>
+</div>
+</header>
+<main id="conteudo">
+<section class="relative overflow-hidden px-5 py-16 md:px-8 md:py-24">
+<div class="absolute inset-0 grain opacity-40"></div>
+<div class="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.95fr_1.05fr] lg:items-end">
+<div>
+<p class="mono text-xs font-semibold uppercase tracking-[.24em] text-folha">prova 02 / imagem como linguagem</p>
+<h1 class="display mt-5 max-w-4xl text-[4.8rem] font-semibold leading-[.84] tracking-[-.065em] md:text-[8.8rem]">O arquivo já pensa antes do texto.</h1>
+<p class="mt-7 max-w-2xl text-2xl leading-9 text-tinta">Esta prova testa imagens segundo contexto editorial. Não procura a foto mais bonita. Procura a imagem certa para cada pergunta.</p>
+</div>
+<figure class="frame border border-grafite bg-grafite p-3 shadow-papel">
+<img alt="Roda de diálogo com gesto expressivo em contexto de oficina" class="h-[460px] w-full object-cover md:h-[620px]" src="assets/prova-roda-dialogo-gesto.jpg"/>
+<figcaption class="mono bg-grafite px-3 py-3 text-xs uppercase tracking-[.2em] text-sol">contexto dominante: escuta, gesto e formação de base</figcaption>
+</figure>
+</div>
+</section>
+<section class="border-y border-grafite bg-grafite px-5 py-8 text-claro md:px-8">
+<div class="mx-auto grid max-w-7xl gap-5 md:grid-cols-4">
+<p><strong>01.</strong> Manifesto visual</p>
+<p><strong>02.</strong> Método em roda</p>
+<p><strong>03.</strong> Território e educação popular</p>
+<p><strong>04.</strong> Arquivo e prova institucional</p>
+</div>
+</section>
+<section class="px-5 py-16 md:px-8 md:py-24" id="manifesto">
+<div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
+<div>
+<p class="mono text-xs uppercase tracking-[.24em] text-terra">manifesto</p>
+<h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">Futebol como palavra pública.</h2>
+<p class="mt-6 text-xl leading-8 text-tinta">A imagem da palestra com camisas sustenta a tese da casa: a bola não entra como adorno esportivo. Ela entra como arquivo, fala, cena, memória e método.</p>
+<p class="mt-5 border-l-4 border-terra bg-claro p-5 text-lg font-bold shadow-papel">Uso recomendado: home principal, abertura do manifesto, página de apresentação autoral.</p>
+</div>
+<figure class="border border-grafite bg-claro p-4 shadow-papel">
+<img alt="Palestra com bola no pé e camisas de futebol expostas" class="h-[680px] w-full object-cover object-[50%_42%]" src="assets/prova-palestra-camisas.jpg"/>
+</figure>
+</div>
+</section>
+<section class="bg-claro px-5 py-16 md:px-8 md:py-24" id="metodo">
+<div class="mx-auto max-w-7xl">
+<div class="max-w-3xl">
+<p class="mono text-xs uppercase tracking-[.24em] text-folha">método</p>
+<h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">Quando a bola fica no centro, a conversa muda de lugar.</h2>
+</div>
+<div class="mt-10 grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+<figure class="border border-grafite bg-papel p-4 shadow-papel">
+<img alt="Roda A Bola Conecta com bolas no centro" class="h-[560px] w-full object-cover" src="assets/prova-roda-a-bola-conecta.jpg"/>
+<figcaption class="mt-3 text-sm font-bold text-tinta">Contexto: metodologia participativa, A Bola Conecta, escuta horizontal.</figcaption>
+</figure>
+<div class="grid gap-6">
+<article class="bg-folha p-7 text-claro shadow-papel">
+<h3 class="display text-4xl font-semibold">Imagem que explica sem legenda</h3>
+<p class="mt-4 text-lg leading-8 text-claro/82">Roda, chão, bola, projeção e banner. O conjunto comunica método antes do parágrafo.</p>
+</article>
+<article class="border border-linha bg-papel p-7">
+<h3 class="display text-4xl font-semibold">Função editorial</h3>
+<p class="mt-4 text-lg leading-8 text-tinta">Boa para seção de metodologia, post sobre A Bola Conecta, página de serviços formativos ou apresentação institucional.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="px-5 py-16 md:px-8 md:py-24" id="territorio">
+<div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-3">
+<article class="lg:col-span-2">
+<p class="mono text-xs uppercase tracking-[.24em] text-barro">território</p>
+<h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">O corpo encontra uma paisagem e a paisagem vira pergunta.</h2>
+<figure class="mt-8 border border-grafite bg-grafite p-4 shadow-papel">
+<img alt="Registro público com cartaz Paulo Freire Vive em Recife" class="h-[720px] w-full object-cover object-center" src="assets/prova-paulo-freire-recife.jpg"/>
+</figure>
+</article>
+<aside class="grid gap-6 lg:pt-28">
+<figure class="border border-linha bg-claro p-4 shadow-papel">
+<img alt="Pessoa cabeceando uma bola na praia" class="h-[360px] w-full object-cover" src="assets/prova-cabeca-praia.jpg"/>
+<figcaption class="mt-3 text-sm font-bold text-tinta">Corpo, bola, mar e suspensão. Imagem para ensaio poético.</figcaption>
+</figure>
+<div class="bg-sol p-7 text-grafite shadow-papel">
+<p class="mono text-xs uppercase tracking-[.2em]">uso recomendado</p>
+<p class="display mt-3 text-3xl font-semibold">Educação popular, território, viagem, memória latino-americana.</p>
+</div>
+</aside>
+</div>
+</section>
+<section class="bg-grafite px-5 py-16 text-claro md:px-8 md:py-24" id="arquivo">
+<div class="mx-auto max-w-7xl">
+<p class="mono text-xs uppercase tracking-[.24em] text-sol">arquivo e prova</p>
+<h2 class="display mt-4 max-w-5xl text-5xl font-semibold leading-none md:text-7xl">Nem toda imagem precisa ser hero. Algumas precisam provar caminho.</h2>
+<div class="mt-10 grid gap-5 md:grid-cols-2">
+<figure class="bg-claro p-4 text-grafite">
+<img alt="Palestra em palco sobre território como laboratório" class="h-[420px] w-full object-cover" src="assets/prova-territorio-laboratorio-palco.jpg"/>
+<figcaption class="mt-4 text-lg font-bold">Palco público: bom para mostrar incidência, programa, política e território.</figcaption>
+</figure>
+<figure class="bg-claro p-4 text-grafite">
+<img alt="Criança equilibrando bola na cabeça em contexto comunitário" class="h-[420px] w-full object-cover object-[50%_42%]" src="assets/prova-crianca-bola-cabeca.jpg"/>
+<figcaption class="mt-4 text-lg font-bold">Infância e brincadeira: forte para ludicidade, cuidado e registro de campo.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-grafite px-5 py-8 md:px-8">
+<div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-tinta md:flex-row md:items-center md:justify-between">
+<p><strong>Homo Ludens Blog</strong> - prova visual interna publicável.</p>
+<a class="font-black text-grafite underline decoration-sol decoration-2 underline-offset-4" href="./">Voltar para o preview</a>
+</div>
+</footer>
 </body>
 </html>

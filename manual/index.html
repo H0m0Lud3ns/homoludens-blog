@@ -1,16 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="theme-color" content="#F2EDE3" />
-  <title>Manual de marca - Homo Ludens Blog</title>
-  <meta name="description" content="Manual visual de marca do Homo Ludens Blog." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,760&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="noindex,nofollow" name="robots"/>
+<meta content="#F2EDE3" name="theme-color"/>
+<title>Manual de marca - Homo Ludens Blog</title>
+<meta content="Manual visual de marca do Homo Ludens Blog." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,760&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Source+Sans+3:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
       --papel: #F2EDE3;
       --claro: #FFF9ED;
@@ -90,66 +91,79 @@
     @media (max-width: 960px) { .cols-3, .cols-5, .photo-grid, .publication { grid-template-columns: 1fr; } .cols-2 { grid-template-columns: 1fr; } }
     @media (max-width: 560px) { .nav { display: none; } h1 { font-size: 46px; } .lead { font-size: 19px; } .card { padding: 18px; } .photo { min-height: 220px; } }
   </style>
-</head>
+
+<!-- GA4: reemplazar GA_MEASUREMENT_ID por el ID real antes de habilitar -->
+<script>
+    window.GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || "";
+    (function () {
+      var id = window.GA_MEASUREMENT_ID;
+      var dnt = navigator.doNotTrack === "1" || window.doNotTrack === "1";
+      if (!id || dnt) return;
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', id, { anonymize_ip: true });
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id);
+      document.head.appendChild(script);
+    })();
+  </script>
+<link href="https://www.homoludens.blog/manual/" rel="canonical"/><meta content="Manual de marca - Homo Ludens Blog" property="og:title"/><meta content="Manual visual de marca do Homo Ludens Blog." property="og:description"/><meta content="website" property="og:type"/><meta content="https://www.homoludens.blog/manual/" property="og:url"/><meta content="pt_BR" property="og:locale"/><meta content="summary" name="twitter:card"/><link href="https://www.homoludens.blog/manual/" hreflang="pt-BR" rel="alternate"/><link href="https://www.homoludens.blog/manual/" hreflang="x-default" rel="alternate"/></head>
 <body>
-  <header>
-    <div class="wrap top">
-      <a class="brand" href="../" aria-label="Voltar ao Homo Ludens Blog"><span class="seal">HL</span><span><strong>Homo Ludens Blog</strong><br><span class="mono" style="font-size:11px;color:var(--tinta);letter-spacing:.08em;text-transform:uppercase;">manual visual</span></span></a>
-      <nav class="nav" aria-label="Navegação do manual"><a href="#paleta">Paleta</a><a href="#foto">Fotografia</a><a href="#componentes">Componentes</a><a href="../tipografias/">Tipografia</a><a href="../">Site</a></nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="wrap hero">
-      <p class="mono eyebrow">Manual de marca</p>
-      <h1 class="display">Uma marca para pensar com o corpo.</h1>
-      <p class="lead">Esta pagina traduz a identidade do Homo Ludens Blog em decisoes visuais: cor, fotografia e componentes. E uma ferramenta de criterio, nao uma vitrine decorativa.</p>
-    </section>
-
-    <section id="paleta" class="wrap">
-      <div class="section-title"><p class="mono eyebrow">01 / Paleta</p><h2 class="display">Papel, cancha, campo, sol e travessia.</h2></div>
-      <div class="grid cols-5">
-        <div class="swatch" style="background:var(--papel)"><p class="hex">Papel<br>#F2EDE3</p><p class="role">fundo principal</p></div>
-        <div class="swatch" style="background:var(--claro)"><p class="hex">Claro<br>#FFF9ED</p><p class="role">cards e formularios</p></div>
-        <div class="swatch dark" style="background:var(--grafite)"><p class="hex">Grafite<br>#2B2B2B</p><p class="role">texto e decisoes</p></div>
-        <div class="swatch dark" style="background:var(--folha)"><p class="hex">Folha<br>#3B6E2A</p><p class="role">campo e continuidade</p></div>
-        <div class="swatch dark" style="background:var(--quadra)"><p class="hex">Quadra<br>#A8392C</p><p class="role">corpo e intensidade</p></div>
-        <div class="swatch" style="background:var(--terra)"><p class="hex">Terra<br>#D87A3B</p><p class="role">rua e calor visual</p></div>
-        <div class="swatch" style="background:var(--sol)"><p class="hex">Sol<br>#F6C026</p><p class="role">foco e descoberta</p></div>
-        <div class="swatch dark" style="background:var(--travessia)"><p class="hex">Travessia<br>#2C6BB5</p><p class="role">ponte e circulacao</p></div>
-        <div class="swatch" style="background:var(--linha)"><p class="hex">Linha<br>#D8CDB8</p><p class="role">bordas e grade</p></div>
-        <div class="swatch" style="background:var(--tinta);color:var(--claro)"><p class="hex">Tinta<br>#6E675B</p><p class="role">texto secundario</p></div>
-      </div>
-      <div class="grid cols-2" style="margin-top:16px;">
-        <div class="card contrast"><strong>Contrastes aprovados</strong><div class="pair"><span>Grafite sobre papel</span><span class="pass">12.14</span></div><div class="pair"><span>Tinta sobre claro</span><span class="pass">5.33</span></div><div class="pair"><span>Claro sobre quadra</span><span class="pass">6.09</span></div><div class="pair"><span>Claro sobre folha</span><span class="pass">5.80</span></div><div class="pair"><span>Grafite sobre sol</span><span class="pass">8.42</span></div></div>
-        <div class="card contrast"><strong>Regras de alerta</strong><div class="pair"><span>Claro sobre terra</span><span class="warn">2.96</span></div><div class="pair"><span>Sol sobre claro</span><span class="warn">1.60</span></div><div class="pair"><span>Folha sobre grafite</span><span class="warn">2.33</span></div><div class="pair"><span>Maximo de acentos fortes por tela</span><span class="pass">2</span></div></div>
-      </div>
-    </section>
-
-    <section id="tipo" class="wrap">
-      <div class="card type-specimen"><h3 class="mono">Tipografia fechada</h3><p class="display big">Fraunces pensa com o corpo.</p><p class="copy">Source Sans 3 sustenta a leitura longa. IBM Plex Mono marca datas, dominios e pequenos registros de arquivo.</p></div>
-    </section>
-
-    <section id="foto" class="wrap">
-      <div class="section-title"><p class="mono eyebrow">02 / Fotografia</p><h2 class="display">Imagem como prova de mundo.</h2></div>
-      <div class="grid photo-grid">
-        <figure class="photo"><img src="../assets/homoludens-roda-a-bola-conecta.jpg" alt="Roda de participantes em atividade de A Bola Conecta" loading="lazy"><span>Roda, escuta e corpo coletivo</span></figure>
-        <figure class="photo"><img src="../assets/homoludens-cabeca-praia.jpg" alt="Pessoa equilibra bola na cabeca em ambiente de praia" loading="lazy"><span>Gesto antes da palavra</span></figure>
-        <figure class="photo"><img src="../assets/prova2-mural-cidade.jpg" alt="Mural urbano usado como imagem de territorio e memoria" loading="lazy"><span>Territorio como arquivo</span></figure>
-      </div>
-    </section>
-
-    <section id="componentes" class="wrap">
-      <div class="section-title"><p class="mono eyebrow">03 / Componentes</p><h2 class="display">Poucos blocos, bem reconheciveis.</h2></div>
-      <div class="grid cols-2">
-        <article class="card component-card"><p class="mono eyebrow">Botoes</p><div class="button-row"><a class="btn btn-primary" href="#">Convidar</a><a class="btn btn-secondary" href="#">Voltar ao caderno</a><a class="btn btn-sun" href="#">Propor colaboracao</a></div></article>
-        <article class="card publication"><div class="preview">HL</div><div><p class="mono eyebrow">Publicacao externa</p><h3 class="display">Um arquivo vivo de perguntas em movimento.</h3><p>Card com dominio, titulo, descricao e sinal visual. Deve dar realidade sem virar bloco pesado.</p></div></article>
-        <article class="card"><blockquote class="display">Onde tem jogo, tem mundo tentando se explicar.</blockquote></article>
-        <article class="card callout"><p class="mono eyebrow" style="color:var(--grafite);">Nota editorial</p><p>Callout serve para contexto, criterio e leitura de margem. Nao substitui paragrafo.</p></article>
-        <article class="card form-demo"><p class="mono eyebrow">Formulario</p><label>Nome<input class="field" value="Sebastián" aria-label="Nome"></label><label style="margin-top:12px;">Mensagem<textarea class="field" aria-label="Mensagem">Quero propor uma colaboracao.</textarea></label><a class="btn btn-primary" style="margin-top:14px;" href="#">Enviar convite</a></article>
-        <article class="card footer-demo"><strong>Homo Ludens Blog</strong><p>Caderno publico de Sebastián Acevedo Vásquez.</p><p><a href="../">Inicio</a> · <a href="../tipografias/">Tipografia</a> · <a href="#paleta">Paleta</a></p></article>
-      </div>
-    </section>
-  </main>
+<header>
+<div class="wrap top">
+<a aria-label="Voltar ao Homo Ludens Blog" class="brand" href="../"><span class="seal">HL</span><span><strong>Homo Ludens Blog</strong><br/><span class="mono" style="font-size:11px;color:var(--tinta);letter-spacing:.08em;text-transform:uppercase;">manual visual</span></span></a>
+<nav aria-label="Navegação do manual" class="nav"><a href="#paleta">Paleta</a><a href="#foto">Fotografia</a><a href="#componentes">Componentes</a><a href="../tipografias/">Tipografia</a><a href="../">Site</a></nav>
+</div>
+</header>
+<main>
+<section class="wrap hero">
+<p class="mono eyebrow">Manual de marca</p>
+<h1 class="display">Uma marca para pensar com o corpo.</h1>
+<p class="lead">Esta pagina traduz a identidade do Homo Ludens Blog em decisoes visuais: cor, fotografia e componentes. E uma ferramenta de criterio, nao uma vitrine decorativa.</p>
+</section>
+<section class="wrap" id="paleta">
+<div class="section-title"><p class="mono eyebrow">01 / Paleta</p><h2 class="display">Papel, cancha, campo, sol e travessia.</h2></div>
+<div class="grid cols-5">
+<div class="swatch" style="background:var(--papel)"><p class="hex">Papel<br/>#F2EDE3</p><p class="role">fundo principal</p></div>
+<div class="swatch" style="background:var(--claro)"><p class="hex">Claro<br/>#FFF9ED</p><p class="role">cards e formularios</p></div>
+<div class="swatch dark" style="background:var(--grafite)"><p class="hex">Grafite<br/>#2B2B2B</p><p class="role">texto e decisoes</p></div>
+<div class="swatch dark" style="background:var(--folha)"><p class="hex">Folha<br/>#3B6E2A</p><p class="role">campo e continuidade</p></div>
+<div class="swatch dark" style="background:var(--quadra)"><p class="hex">Quadra<br/>#A8392C</p><p class="role">corpo e intensidade</p></div>
+<div class="swatch" style="background:var(--terra)"><p class="hex">Terra<br/>#D87A3B</p><p class="role">rua e calor visual</p></div>
+<div class="swatch" style="background:var(--sol)"><p class="hex">Sol<br/>#F6C026</p><p class="role">foco e descoberta</p></div>
+<div class="swatch dark" style="background:var(--travessia)"><p class="hex">Travessia<br/>#2C6BB5</p><p class="role">ponte e circulacao</p></div>
+<div class="swatch" style="background:var(--linha)"><p class="hex">Linha<br/>#D8CDB8</p><p class="role">bordas e grade</p></div>
+<div class="swatch" style="background:var(--tinta);color:var(--claro)"><p class="hex">Tinta<br/>#6E675B</p><p class="role">texto secundario</p></div>
+</div>
+<div class="grid cols-2" style="margin-top:16px;">
+<div class="card contrast"><strong>Contrastes aprovados</strong><div class="pair"><span>Grafite sobre papel</span><span class="pass">12.14</span></div><div class="pair"><span>Tinta sobre claro</span><span class="pass">5.33</span></div><div class="pair"><span>Claro sobre quadra</span><span class="pass">6.09</span></div><div class="pair"><span>Claro sobre folha</span><span class="pass">5.80</span></div><div class="pair"><span>Grafite sobre sol</span><span class="pass">8.42</span></div></div>
+<div class="card contrast"><strong>Regras de alerta</strong><div class="pair"><span>Claro sobre terra</span><span class="warn">2.96</span></div><div class="pair"><span>Sol sobre claro</span><span class="warn">1.60</span></div><div class="pair"><span>Folha sobre grafite</span><span class="warn">2.33</span></div><div class="pair"><span>Maximo de acentos fortes por tela</span><span class="pass">2</span></div></div>
+</div>
+</section>
+<section class="wrap" id="tipo">
+<div class="card type-specimen"><h3 class="mono">Tipografia fechada</h3><p class="display big">Fraunces pensa com o corpo.</p><p class="copy">Source Sans 3 sustenta a leitura longa. IBM Plex Mono marca datas, dominios e pequenos registros de arquivo.</p></div>
+</section>
+<section class="wrap" id="foto">
+<div class="section-title"><p class="mono eyebrow">02 / Fotografia</p><h2 class="display">Imagem como prova de mundo.</h2></div>
+<div class="grid photo-grid">
+<figure class="photo"><img alt="Roda de participantes em atividade de A Bola Conecta" loading="lazy" src="../assets/homoludens-roda-a-bola-conecta.jpg"/><span>Roda, escuta e corpo coletivo</span></figure>
+<figure class="photo"><img alt="Pessoa equilibra bola na cabeca em ambiente de praia" loading="lazy" src="../assets/homoludens-cabeca-praia.jpg"/><span>Gesto antes da palavra</span></figure>
+<figure class="photo"><img alt="Mural urbano usado como imagem de territorio e memoria" loading="lazy" src="../assets/prova2-mural-cidade.jpg"/><span>Territorio como arquivo</span></figure>
+</div>
+</section>
+<section class="wrap" id="componentes">
+<div class="section-title"><p class="mono eyebrow">03 / Componentes</p><h2 class="display">Poucos blocos, bem reconheciveis.</h2></div>
+<div class="grid cols-2">
+<article class="card component-card"><p class="mono eyebrow">Botoes</p><div class="button-row"><a class="btn btn-primary" href="#">Convidar</a><a class="btn btn-secondary" href="#">Voltar ao caderno</a><a class="btn btn-sun" href="#">Propor colaboracao</a></div></article>
+<article class="card publication"><div class="preview">HL</div><div><p class="mono eyebrow">Publicacao externa</p><h3 class="display">Um arquivo vivo de perguntas em movimento.</h3><p>Card com dominio, titulo, descricao e sinal visual. Deve dar realidade sem virar bloco pesado.</p></div></article>
+<article class="card"><blockquote class="display">Onde tem jogo, tem mundo tentando se explicar.</blockquote></article>
+<article class="card callout"><p class="mono eyebrow" style="color:var(--grafite);">Nota editorial</p><p>Callout serve para contexto, criterio e leitura de margem. Nao substitui paragrafo.</p></article>
+<article class="card form-demo"><p class="mono eyebrow">Formulario</p><label>Nome<input aria-label="Nome" class="field" value="Sebastián"/></label><label style="margin-top:12px;">Mensagem<textarea aria-label="Mensagem" class="field">Quero propor uma colaboracao.</textarea></label><a class="btn btn-primary" href="#" style="margin-top:14px;">Enviar convite</a></article>
+<article class="card footer-demo"><strong>Homo Ludens Blog</strong><p>Caderno publico de Sebastián Acevedo Vásquez.</p><p><a href="../">Inicio</a> · <a href="../tipografias/">Tipografia</a> · <a href="#paleta">Paleta</a></p></article>
+</div>
+</section>
+</main>
 </body>
 </html>
