@@ -1,0 +1,73 @@
+# Homo Ludens Blog - contexto expandido para IA
+
+## Identidade
+
+Homo Ludens Blog e um caderno publico de Sebastián Acevedo Vásquez para pensar o mundo pelo jogo. O site articula esporte, educacao, cultura, corpo, territorio, memoria, pesquisa e colaboracao.
+
+A frase de criterio visual e editorial registrada no manual de marca e:
+
+> A tipografia do Homo Ludens Blog deve parecer uma pessoa pensando com o corpo, nao uma instituicao tentando parecer importante.
+
+## Autor
+
+Sebastián Acevedo Vásquez e ex-atleta, educador, professor universitario, pesquisador independente e articulador de ecossistemas entre Brasil, Chile e America Latina. Atua em frentes de inovacao esportiva, educacao, cultura e projetos sociais ligados ao futebol, ao jogo e aos territorios.
+
+## Linha editorial
+
+O blog trata o jogo como linguagem para ler cultura, infancia, direitos humanos, aprendizagem, politica publica, cidade e futuro comum. O esporte nao aparece apenas como performance ou competicao, mas como pratica social, campo de encontro e forma de pensamento.
+
+## Paginas publicas
+
+### Inicio
+
+URL: https://homoludens.blog/
+
+Entrada principal do projeto. Apresenta a ideia do caderno publico, seus eixos editoriais, publicacoes externas, posts internos, caminhos de circulacao e formulario de colaboracao.
+
+### Sobre
+
+URL: https://homoludens.blog/sobre.html
+
+Explica o que e o Homo Ludens Blog, quem escreve, qual e a linha editorial e por que o jogo aparece como linguagem de leitura do mundo.
+
+### Mapa do site
+
+URL: https://homoludens.blog/mapa-do-site.html
+
+Pagina humana de navegacao com os caminhos principais do site: inicio, caderno, posts, sobre, privacidade, sitemap XML e arquivos para IA.
+
+### Privacidade
+
+URL: https://homoludens.blog/privacidade.html
+
+Explica que o formulario coleta nome, email, instituicao/projeto, tipo de convite e mensagem. O envio usa FormSubmit e chega a seba.3@sportscolab.co. O site usa Google Fonts e links/miniaturas do YouTube.
+
+## Posts internos
+
+### Uma cancha tambem pensa
+
+URL: https://homoludens.blog/posts/uma-cancha-tambem-pensa.html
+
+Entrada inaugural do Caderno Homoludens. A quadra aparece como arquivo vivo de aprendizagem, cultura, corpo e territorio. O texto afirma que uma cancha tambem pensa quando alguem aprende a passar a bola, quando alguem descobre que pode entrar e quando uma regra muda para sustentar o encontro.
+
+### Quando a aula comeca antes do apito
+
+URL: https://homoludens.blog/posts/quando-a-aula-comeca-antes-do-apito.html
+
+Nota de campo sobre chegada, corpo, regra e aprendizagem em movimento. O texto trabalha a ideia de que a aula nao comeca apenas quando alguem explica, mas antes: no modo como as pessoas chegam, ocupam o espaco, olham, esperam, testam limites e leem o ambiente.
+
+## Publicacoes externas destacadas
+
+O site aponta para publicacoes e registros externos ligados a universidade, midia esportiva, direitos humanos, educacao social, YouTube e plataformas editoriais. Esses links funcionam como prova de circulacao real do pensamento de Sebastián e do campo de atuacao do projeto.
+
+## Convites e colaboracao
+
+O site abre caminho para convites institucionais, aulas, palestras, oficinas, consultorias, curadorias, pesquisas aplicadas e desenho de programas. O formulario de colaboracao e o caminho preferencial de contato.
+
+## Manual de marca
+
+A tipografia titular escolhida e `Fraunces`, com `Source Sans 3` para texto corrido e `IBM Plex Mono` para etiquetas e metadados. A paleta trabalha com papel, claro, grafite, tinta, linha, folha, terra, quadra, sol e travessia. A fotografia deve provar que o pensamento saiu do abstrato: corpo, gesto, territorio, roda, aula, jogo e memoria.
+
+## Regras de nome
+
+Quando usar nome completo, escrever sempre `Sebastián Acevedo Vásquez`. Quando usar forma curta, escrever `Sebastián`. Evitar nome completo sem os dois sobrenomes.

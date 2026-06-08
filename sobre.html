@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#F2EDE3" />
+  <title>Sobre - Homo Ludens Blog</title>
+  <meta name="description" content="Sobre o Homo Ludens Blog, caderno publico de Sebastián Acevedo Vásquez para pensar esporte, educacao, cultura e vida em movimento pelo jogo." />
+  <link rel="canonical" href="https://homoludens.blog/sobre.html" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { papel: '#F2EDE3', claro: '#FFF9ED', grafite: '#2B2B2B', tinta: '#6E675B', linha: '#D8CDB8', folha: '#3B6E2A', terra: '#D87A3B', quadra: '#A8392C', sol: '#F6C026', travessia: '#2C6BB5' }, fontFamily: { display: ['Fraunces', 'Georgia', 'serif'], body: ['Source Sans 3', 'Verdana', 'sans-serif'], mono: ['IBM Plex Mono', 'ui-monospace', 'monospace'] }, boxShadow: { papel: '0 28px 80px rgba(43, 43, 43, .12)' } } } }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,760&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: light; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans 3', Verdana, sans-serif; background: radial-gradient(circle at 12% 8%, rgba(246,192,38,.22), transparent 24%), radial-gradient(circle at 86% 10%, rgba(59,110,42,.14), transparent 28%), linear-gradient(180deg,#fff9ed 0%,#f2ede3 50%,#eadfc9 100%); color: #2B2B2B; }
+    .display { font-family: 'Fraunces', Georgia, serif; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+    .paper-grid { background-image: linear-gradient(rgba(43,43,43,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(43,43,43,.055) 1px, transparent 1px); background-size: 32px 32px; }
+    a:focus-visible { outline: 3px solid #F6C026; outline-offset: 4px; }
+    .load-in { animation: rise .7s ease both; }
+    .load-in:nth-child(2) { animation-delay: .08s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .load-in { animation: none; } }
+  
+    .site-mobile-nav { scroll-snap-type: x proximity; scrollbar-width: none; }
+    .site-mobile-nav::-webkit-scrollbar { display: none; }
+    .site-mobile-nav a { scroll-snap-align: start; display: inline-flex; min-height: 44px; align-items: center; }
+    .site-nav-link[aria-current="page"], .site-nav-link[aria-current="true"] { color: #2B2B2B; }
+  
+    .mobile-menu-toggle { min-height: 44px; min-width: 44px; }
+    .mobile-menu-shell[hidden], .mobile-menu-backdrop[hidden] { display: none; }
+    .mobile-menu-backdrop { position: fixed; inset: 0; z-index: 48; background: rgba(43,43,43,.34); backdrop-filter: blur(6px); }
+    .mobile-menu-shell { position: fixed; left: .75rem; right: .75rem; top: 4.75rem; z-index: 49; max-height: calc(100vh - 5.5rem); overflow-y: auto; border: 1px solid rgba(43,43,43,.24); border-radius: 1.6rem; background: #FFF9ED; box-shadow: 0 28px 90px rgba(43,43,43,.24); }
+    .mobile-menu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+    .mobile-menu-link { display: flex; min-height: 4.25rem; flex-direction: column; justify-content: center; border-radius: 1rem; border: 1px solid rgba(43,43,43,.14); background: rgba(242,237,227,.78); padding: .85rem .95rem; color: #2B2B2B; }
+    .mobile-menu-link strong { font-size: .95rem; line-height: 1.1; }
+    .mobile-menu-link span { margin-top: .25rem; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: #6E675B; }
+    .mobile-menu-link:hover, .mobile-menu-link:focus-visible { border-color: #2B2B2B; background: #F6C026; }
+    .mobile-menu-cta { display: flex; min-height: 3.2rem; align-items: center; justify-content: center; border-radius: 999px; background: #2B2B2B; padding: .85rem 1rem; font-weight: 900; color: #FFF9ED; }
+    body.menu-open { overflow: hidden; }
+    @media (min-width: 1024px) { .mobile-menu-shell, .mobile-menu-backdrop { display: none !important; } body.menu-open { overflow: auto; } }
+  </style>
+
+  <meta property="og:title" content="Sobre - Homo Ludens Blog" />
+  <meta property="og:description" content="Sobre o Homo Ludens Blog e a linha editorial de Sebastián Acevedo Vásquez." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://homoludens.blog/sobre.html" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ProfilePage","name":"Sobre - Homo Ludens Blog","url":"https://homoludens.blog/sobre.html","inLanguage":"pt-BR","about":{"@type":"Person","name":"Sebastián Acevedo Vásquez","url":"https://homoludens.blog/sobre.html"},"isPartOf":{"@type":"Blog","name":"Homo Ludens Blog","url":"https://homoludens.blog/"}}
+  </script>
+
+  <style id="hl-footer-style">
+    .hl-footer { --hl-papel:#F2EDE3; --hl-claro:#FFF9ED; --hl-grafite:#2B2B2B; --hl-tinta:#6E675B; --hl-linha:#D8CDB8; --hl-folha:#3B6E2A; --hl-terra:#D87A3B; --hl-quadra:#A8392C; --hl-sol:#F6C026; --hl-travessia:#2C6BB5; border-top: 1px solid var(--hl-linha); background: linear-gradient(180deg, rgba(255,249,237,.78), var(--hl-papel)); color: var(--hl-grafite); }
+    .hl-footer a { color: inherit; text-decoration: none; }
+    .hl-footer a:hover { color: var(--hl-folha); }
+    .hl-footer a:focus-visible { outline: 3px solid var(--hl-sol); outline-offset: 4px; border-radius: .5rem; }
+    .hl-footer__wrap { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3rem 0 1.4rem; }
+    .hl-footer__grid { display: grid; gap: 2rem; }
+    .hl-footer__wordmark { font-family: 'Fraunces', Georgia, serif; font-size: clamp(2.2rem, 8vw, 4.4rem); line-height: .9; letter-spacing: -.045em; }
+    .hl-footer__tagline { margin-top: 1rem; max-width: 22rem; font-size: 1.04rem; line-height: 1.55; color: var(--hl-tinta); }
+    .hl-footer__micro, .hl-footer__eyebrow, .hl-footer__bottom { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+    .hl-footer__micro { margin-top: 1.3rem; display: inline-flex; border: 1px solid var(--hl-linha); border-radius: 999px; background: var(--hl-claro); padding: .55rem .75rem; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--hl-tinta); }
+    .hl-footer__eyebrow { margin: 0 0 .9rem; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--hl-quadra); }
+    .hl-footer__list { display: grid; gap: .62rem; margin: 0; padding: 0; list-style: none; }
+    .hl-footer__list a { display: inline-flex; min-height: 2.75rem; align-items: center; font-weight: 800; color: var(--hl-grafite); }
+    .hl-footer__manifesto { max-width: 22rem; margin: 0; color: var(--hl-tinta); font-size: 1.08rem; line-height: 1.6; }
+    .hl-footer__stamp { margin-top: 1rem; width: fit-content; border-left: 4px solid var(--hl-terra); background: var(--hl-claro); padding: .7rem .85rem; color: var(--hl-grafite); font-weight: 800; }
+    .hl-footer__bottom { display: flex; flex-direction: column; gap: .7rem; margin-top: 2.4rem; border-top: 1px solid rgba(43,43,43,.14); padding-top: 1rem; color: var(--hl-tinta); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+    @media (min-width: 768px) { .hl-footer__grid { grid-template-columns: 1.35fr .85fr 1.05fr 1.15fr; align-items: start; } .hl-footer__bottom { flex-direction: row; justify-content: space-between; } }
+  </style>
+</head>
+<body class="antialiased">
+  <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-grafite focus:px-4 focus:py-2 focus:text-claro">Pular para o conteúdo</a>
+
+  <header class="sticky top-0 z-40 border-b border-linha/80 bg-papel/88 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-5 py-4 md:px-8">
+      <a href="./" class="group flex min-w-0 items-center gap-3" aria-label="Homo Ludens Blog">
+        <span class="display flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-grafite bg-claro text-xl font-bold">HL</span>
+        <span class="min-w-0 leading-tight">
+          <span class="block truncate text-sm font-black uppercase tracking-[.14em]">Homo Ludens Blog</span>
+          <span class="mono hidden text-[10px] text-tinta sm:block">um caderno para pensar o mundo pelo jogo</span>
+        </span>
+      </a>
+      <nav class="hidden items-center gap-5 text-[11px] font-black uppercase tracking-[.18em] text-tinta lg:flex" aria-label="Navegação principal">
+        <a href="./#inicio" class="site-nav-link hover:text-grafite">Início</a>
+        <a href="./#caderno" class="site-nav-link hover:text-grafite">Caderno</a>
+        <a href="./#corpo" class="site-nav-link hover:text-grafite">Corpo</a>
+        <a href="./#metodo" class="site-nav-link hover:text-grafite">Método</a>
+        <a href="./#palavra" class="site-nav-link hover:text-grafite">Palavra</a>
+        <a href="./#circulacao" class="site-nav-link hover:text-grafite">Circulação</a>
+        <a href="./#colaborar" class="site-nav-link hover:text-grafite">Colaborar</a>
+        <a href="./sobre.html" class="site-nav-link hover:text-grafite" aria-current="page">Sobre</a>
+      </nav>
+      <div class="flex shrink-0 items-center gap-2">
+        <a href="./#colaborar" class="hidden min-h-11 items-center justify-center rounded-full border border-grafite bg-grafite px-5 py-2 text-sm font-black text-claro hover:bg-folha sm:inline-flex">Convidar</a>
+        <button type="button" class="mobile-menu-toggle inline-flex items-center gap-2 rounded-full border border-grafite bg-claro px-4 py-2 text-xs font-black uppercase tracking-[.16em] text-grafite lg:hidden" aria-controls="mobile-menu-panel" aria-expanded="false" data-mobile-menu-toggle>
+          Menu
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+    <button type="button" class="mobile-menu-backdrop lg:hidden" aria-label="Fechar menu" hidden data-mobile-menu-backdrop></button>
+    <nav id="mobile-menu-panel" class="mobile-menu-shell lg:hidden" aria-label="Menu mobile" hidden>
+      <div class="p-4">
+        <div class="mb-4 flex items-start justify-between gap-4">
+          <div>
+            <p class="mono text-[10px] font-semibold uppercase tracking-[.22em] text-quadra">Navegar</p>
+            <p class="display mt-1 text-2xl font-semibold leading-tight">Escolha por onde entrar.</p>
+          </div>
+          <span class="rounded-full bg-sol px-3 py-1 text-xs font-black text-grafite">HL</span>
+        </div>
+        <div class="mobile-menu-grid">
+          <a href="./#inicio" class="mobile-menu-link"><strong>Início</strong><span aria-hidden="true">começar</span></a>
+          <a href="./#caderno" class="mobile-menu-link"><strong>Caderno</strong><span aria-hidden="true">escritos</span></a>
+          <a href="./#corpo" class="mobile-menu-link"><strong>Corpo</strong><span aria-hidden="true">prática</span></a>
+          <a href="./#metodo" class="mobile-menu-link"><strong>Método</strong><span aria-hidden="true">como pensa</span></a>
+          <a href="./#palavra" class="mobile-menu-link"><strong>Palavra</strong><span aria-hidden="true">fala pública</span></a>
+          <a href="./#circulacao" class="mobile-menu-link"><strong>Circulação</strong><span aria-hidden="true">mundo</span></a>
+          <a href="./#colaborar" class="mobile-menu-link"><strong>Colaborar</strong><span aria-hidden="true">convites</span></a>
+          <a href="./sobre.html" class="mobile-menu-link" aria-current="page"><strong>Sobre</strong><span aria-hidden="true">projeto</span></a>
+        </div>
+        <a href="./#colaborar" class="mobile-menu-cta mt-4">Propor colaboração</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
+        <div class="load-in">
+          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-quadra">Sobre a casa</p>
+          <h1 class="display mt-6 max-w-5xl text-[3.1rem] font-semibold leading-[.94] tracking-[-.045em] md:text-[6.2rem]">Um caderno para pensar com o jogo.</h1>
+          <p class="mt-8 max-w-3xl text-xl leading-8 text-tinta md:text-2xl md:leading-9">Homo Ludens Blog é uma casa autoral de Sebastián Acevedo Vásquez para reunir ensaios, notas de campo, publicações, referências e perguntas sobre esporte, educação, cultura e vida em movimento.</p>
+        </div>
+        <aside class="load-in border border-linha bg-claro p-4 shadow-papel md:p-5">
+          <img src="assets/homoludens-pensar-en-movimiento.jpg" alt="Sebastián em cena de pensamento e movimento" class="h-[430px] w-full object-cover object-center grayscale-[8%]" loading="eager" />
+          <p class="mono mt-4 border-t border-linha pt-4 text-xs uppercase tracking-[.18em] text-tinta">pensar em movimento</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="paper-grid px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-[1.5rem] border border-linha bg-claro p-6 shadow-papel"><p class="mono text-xs uppercase tracking-[.2em] text-folha">o que é</p><h2 class="display mt-4 text-2xl font-semibold">Caderno público</h2><p class="mt-4 leading-7 text-tinta">Um lugar para escrever sem separar corpo, território, aula, jogo, política, memória e pesquisa.</p></article>
+        <article class="rounded-[1.5rem] border border-linha bg-claro p-6 shadow-papel"><p class="mono text-xs uppercase tracking-[.2em] text-terra">quem escreve</p><h2 class="display mt-4 text-2xl font-semibold">Sebastián</h2><p class="mt-4 leading-7 text-tinta">Ex-atleta, educador, professor universitário, pesquisador independente e articulador entre Brasil, Chile e América Latina.</p></article>
+        <article class="rounded-[1.5rem] border border-linha bg-claro p-6 shadow-papel"><p class="mono text-xs uppercase tracking-[.2em] text-quadra">linha editorial</p><h2 class="display mt-4 text-2xl font-semibold">Jogo como linguagem</h2><p class="mt-4 leading-7 text-tinta">O esporte aparece como forma de ler cultura, infância, direitos humanos, aprendizagem e futuro comum.</p></article>
+        <article class="rounded-[1.5rem] border border-grafite bg-grafite p-6 text-claro shadow-papel"><p class="mono text-xs uppercase tracking-[.2em] text-sol">convite</p><h2 class="display mt-4 text-2xl font-semibold">Pensar junto</h2><p class="mt-4 leading-7 text-claro/78">A casa também é porta para aulas, palestras, oficinas, consultorias, pesquisas e conversas institucionais.</p></article>
+      </div>
+    </section>
+
+    <section class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto max-w-5xl rounded-[2rem] border border-grafite bg-claro p-7 shadow-papel md:p-12">
+        <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-folha">Como contribuir</p>
+        <h2 class="display mt-5 text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">Toda boa conversa começa com uma cena concreta.</h2>
+        <div class="mt-8 grid gap-8 text-xl leading-9 text-grafite/82 md:grid-cols-2">
+          <p>Se você tem uma pergunta, uma experiência, um território, uma aula, uma pesquisa ou um convite que conversa com esporte e cultura, o caminho é escrever.</p>
+          <p>O importante é que a colaboração tenha cuidado, consequência e escuta. O jogo aqui não é metáfora vazia. É método, memória e responsabilidade.</p>
+        </div>
+        <a href="./#colaborar" class="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-grafite px-6 py-3 text-sm font-black text-claro hover:bg-folha">Abrir formulário de colaboração</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hl-footer" role="contentinfo" aria-label="Rodapé do Homo Ludens Blog">
+    <div class="hl-footer__wrap">
+      <div class="hl-footer__grid">
+        <section aria-label="Identidade do site">
+          <a class="hl-footer__wordmark" href="./">Homo<br>Ludens</a>
+          <p class="hl-footer__tagline">Um caderno público para pensar o mundo pelo jogo.</p>
+          <p class="hl-footer__micro">2026 · edição em campo</p>
+        </section>
+        <nav aria-label="Navegação do rodapé">
+          <p class="hl-footer__eyebrow">Navegação</p>
+          <ul class="hl-footer__list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="index.html#caderno">Posts e arquivo</a></li>
+            <li><a href="index.html#colaborar">Colaborar</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Publicação responsável">
+          <p class="hl-footer__eyebrow">Publicação responsável</p>
+          <ul class="hl-footer__list">
+            <li><a href="mapa-do-site.html">Mapa do site</a></li>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="sitemap.xml">Sitemap XML</a></li>
+            <li><a href="robots.txt">Robots.txt</a></li>
+            <li><a href="llms.txt">LLMS.txt</a></li>
+          </ul>
+        </nav>
+        <section aria-label="Manifesto curto">
+          <p class="hl-footer__eyebrow">Manifesto curto</p>
+          <p class="hl-footer__manifesto">Onde tem jogo, tem corpo, território, memória e linguagem tentando explicar o mundo sem tirar os pés do chão.</p>
+          <p class="hl-footer__stamp">Português para construir casa. Espanhol para abrir janela.</p>
+        </section>
+      </div>
+      <div class="hl-footer__bottom">
+        <span>© 2026 Homo Ludens Blog · Sebastián Acevedo Vásquez</span>
+        <span>Feito com cuidado, publicado com critério.</span>
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+
+    (function () {
+      var toggle = document.querySelector('[data-mobile-menu-toggle]');
+      var panel = document.getElementById('mobile-menu-panel');
+      var backdrop = document.querySelector('[data-mobile-menu-backdrop]');
+      if (!toggle || !panel || !backdrop) return;
+      function setMenu(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        panel.hidden = !open;
+        backdrop.hidden = !open;
+        document.body.classList.toggle('menu-open', open);
+      }
+      toggle.addEventListener('click', function () { setMenu(toggle.getAttribute('aria-expanded') !== 'true'); });
+      backdrop.addEventListener('click', function () { setMenu(false); });
+      panel.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', function () { setMenu(false); }); });
+      document.addEventListener('keydown', function (event) { if (event.key === 'Escape') setMenu(false); });
+    })();
+    });
+  </script>
+</body>
+</html>

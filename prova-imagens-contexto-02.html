@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#10100E" />
+  <title>Prova 02 de imagens por contexto - Homo Ludens Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noite: '#10100E', papel: '#F2EDE3', claro: '#FFF9ED', grafite: '#2B2B2B', tinta: '#6E675B',
+            linha: '#D8CDB8', folha: '#3B6E2A', terra: '#D87A3B', barro: '#A8392C', sol: '#F6C026', campo: '#1F5A3D', azul: '#2C6BB5'
+          },
+          fontFamily: {
+            display: ['Fraunces', 'serif'], body: ['Source Sans 3', 'sans-serif'], mono: ['IBM Plex Mono', 'monospace']
+          },
+          boxShadow: { bruto: '14px 14px 0 rgba(246,192,38,.22)' }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,760&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans 3', sans-serif; background: #10100E; color: #FFF9ED; }
+    .display { font-family: 'Fraunces', serif; }
+    .mono { font-family: 'IBM Plex Mono', monospace; }
+    .cut { clip-path: polygon(0 0, 100% 0, 100% 88%, 92% 100%, 0 100%); }
+    .paper { background-image: linear-gradient(90deg, rgba(246,192,38,.12) 1px, transparent 1px), linear-gradient(rgba(246,192,38,.08) 1px, transparent 1px); background-size: 42px 42px; }
+  </style>
+</head>
+<body>
+  <header class="sticky top-0 z-40 border-b border-claro/15 bg-noite/88 px-5 py-4 backdrop-blur md:px-8">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-5">
+      <a href="./" class="flex items-center gap-3">
+        <span class="grid h-11 w-11 place-items-center rounded-full bg-sol text-sm font-black text-noite">HL</span>
+        <span><strong>Homo Ludens Blog</strong><br><span class="text-sm text-claro/62">prova visual 02</span></span>
+      </a>
+      <nav class="hidden gap-6 text-sm font-bold text-claro/70 md:flex" aria-label="Navegação da prova">
+        <a href="#campo" class="hover:text-sol">Campo</a>
+        <a href="#pensamento" class="hover:text-sol">Pensamento</a>
+        <a href="#cidade" class="hover:text-sol">Cidade</a>
+        <a href="#arquivo" class="hover:text-sol">Arquivo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="paper px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.92fr_1.08fr] lg:items-end">
+        <div>
+          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-sol">prova 03 / corpo, palco e cidade</p>
+          <h1 class="display mt-5 max-w-4xl text-[4.6rem] font-semibold leading-[.84] tracking-[-.065em] md:text-[8.4rem]">A imagem certa muda o argumento.</h1>
+          <p class="mt-7 max-w-2xl text-2xl leading-9 text-claro/76">Esta versão testa uma direção menos íntima e mais pública: campo profissional, pensamento em palco, cidade como arquivo e trajetória institucional.</p>
+        </div>
+        <figure class="cut border border-sol bg-sol p-3 shadow-bruto">
+          <img src="assets/prova2-aquecimento-estadio.jpg" alt="Jogador em aquecimento no estádio controlando a bola" class="h-[560px] w-full object-cover object-[50%_42%] md:h-[720px]" />
+          <figcaption class="mono bg-sol px-3 py-3 text-xs uppercase tracking-[.2em] text-noite">contexto dominante: corpo técnico, rito profissional, concentração</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="border-y border-claro/20 bg-claro px-5 py-8 text-grafite md:px-8">
+      <div class="mx-auto grid max-w-7xl gap-5 md:grid-cols-4">
+        <p><strong>01.</strong> Campo profissional</p>
+        <p><strong>02.</strong> Pensamento público</p>
+        <p><strong>03.</strong> Cidade e memória</p>
+        <p><strong>04.</strong> Arquivo de trajetória</p>
+      </div>
+    </section>
+
+    <section id="campo" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.1fr_.9fr] lg:items-center">
+        <figure class="border border-claro/20 bg-claro/5 p-4">
+          <img src="assets/prova2-aquecimento-estadio.jpg" alt="Controle de bola em aquecimento de estádio" class="h-[720px] w-full object-cover object-[50%_40%]" />
+        </figure>
+        <div>
+          <p class="mono text-xs uppercase tracking-[.24em] text-sol">campo</p>
+          <h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">Antes do jogo, o corpo já está lendo o mundo.</h2>
+          <p class="mt-6 text-xl leading-8 text-claro/76">Esta imagem dá uma chave mais esportiva e biográfica ao Homoludens. Ela fala de técnica, rito, concentração e memória de atleta.</p>
+          <p class="mt-6 border-l-4 border-sol bg-claro p-5 text-lg font-bold text-grafite">Uso recomendado: seção biográfica, ensaio sobre técnica, abertura de texto sobre o corpo que pensa antes da palavra.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pensamento" class="bg-papel px-5 py-16 text-grafite md:px-8 md:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-4xl">
+          <p class="mono text-xs uppercase tracking-[.24em] text-barro">pensamento público</p>
+          <h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">A bola no palco impede que a ideia vire abstração.</h2>
+        </div>
+        <div class="mt-10 grid gap-6 lg:grid-cols-2">
+          <figure class="border border-grafite bg-noite p-4 text-claro shadow-bruto">
+            <img src="assets/prova2-paulo-freire-palco.jpg" alt="Palco com citação de Paulo Freire e bola no chão" class="h-[460px] w-full object-cover" />
+            <figcaption class="mt-4 text-lg font-bold">Educação, jogo, Paulo Freire e presença latino-americana.</figcaption>
+          </figure>
+          <figure class="border border-grafite bg-noite p-4 text-claro shadow-bruto">
+            <img src="assets/prova2-sportscolab-palco.jpg" alt="Palco com marca SportsCoLab e bola no chão" class="h-[460px] w-full object-cover" />
+            <figcaption class="mt-4 text-lg font-bold">Inovação esportiva, fala pública e ecossistema.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="cidade" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.86fr_1.14fr] lg:items-center">
+        <div>
+          <p class="mono text-xs uppercase tracking-[.24em] text-sol">cidade</p>
+          <h2 class="display mt-4 text-5xl font-semibold leading-none md:text-7xl">Caminhar também é uma forma de pesquisa.</h2>
+          <p class="mt-6 text-xl leading-8 text-claro/76">A imagem do mural abre uma camada menos esportiva e mais urbana. Ela serve quando Homoludens precisa respirar rua, arte, deslocamento e memória visual.</p>
+        </div>
+        <figure class="border border-claro/20 bg-claro p-4 text-grafite shadow-bruto">
+          <img src="assets/prova2-mural-cidade.jpg" alt="Pessoa caminhando diante de grande mural urbano" class="h-[420px] w-full object-cover" />
+          <figcaption class="mt-4 text-lg font-bold">Uso: território, cidade, arte pública, ensaio de deslocamento.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="arquivo" class="bg-campo px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto max-w-7xl">
+        <p class="mono text-xs uppercase tracking-[.24em] text-sol">arquivo</p>
+        <h2 class="display mt-4 max-w-5xl text-5xl font-semibold leading-none md:text-7xl">Algumas imagens são boas porque provam uma travessia.</h2>
+        <div class="mt-10 grid gap-5 lg:grid-cols-[.95fr_1.05fr]">
+          <figure class="bg-claro p-4 text-grafite">
+            <img src="assets/prova2-bielsa-palco.jpg" alt="Palco com citação esportiva projetada" class="h-[440px] w-full object-cover" />
+            <figcaption class="mt-4 text-lg font-bold">Imagem de apoio para pensamento esportivo, liderança e formação.</figcaption>
+          </figure>
+          <div class="border border-claro/20 p-8">
+            <p class="mono text-xs uppercase tracking-[.24em] text-sol">decisão editorial</p>
+            <p class="display mt-5 text-4xl font-semibold leading-tight">Esta prova é mais institucional e esportiva. A anterior é mais humana e metodológica.</p>
+            <p class="mt-5 text-xl leading-8 text-claro/78">Se a home precisa parecer caderno autoral, a primeira prova vence. Se precisa parecer trajetória pública de um pesquisador-atleta, esta segunda prova abre melhor o caminho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-claro/20 px-5 py-8 md:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-claro/68 md:flex-row md:items-center md:justify-between">
+      <p><strong>Homo Ludens Blog</strong> - prova visual 02.</p>
+      <div class="flex gap-4">
+        <a href="prova-imagens-contexto.html" class="font-black text-sol underline underline-offset-4">Ver prova anterior</a>
+        <a href="./" class="font-black text-sol underline underline-offset-4">Voltar para o preview</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

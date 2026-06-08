@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#F2EDE3" />
+  <title>Homo Ludens Blog - Sebastián Acevedo Vásquez</title>
+  <meta name="description" content="Homo Ludens Blog, caderno publico de Sebastián Acevedo Vásquez para pensar esporte, educacao, cultura e vida em movimento pelo jogo." />
+  <link rel="canonical" href="https://homoludens.blog/" />
+  <meta property="og:title" content="Homo Ludens Blog - Sebastián Acevedo Vásquez" />
+  <meta property="og:description" content="Um caderno publico para pensar o mundo pelo jogo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://homoludens.blog/" />
+  <meta property="og:image" content="https://homoludens.blog/assets/homoludens-hero-palestra-camisas.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            papel: '#F2EDE3',
+            claro: '#FFF9ED',
+            grafite: '#2B2B2B',
+            tinta: '#6E675B',
+            linha: '#D8CDB8',
+            folha: '#3B6E2A',
+            terra: '#D87A3B',
+            quadra: '#A8392C',
+            sol: '#F6C026',
+            travessia: '#2C6BB5'
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            body: ['Source Sans 3', 'Verdana', 'sans-serif'],
+            mono: ['IBM Plex Mono', 'ui-monospace', 'monospace']
+          },
+          boxShadow: {
+            papel: '0 28px 80px rgba(43, 43, 43, .12)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,760&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <style>
+    :root { color-scheme: light; }
+    html { scroll-behavior: smooth; }
+    section[id] { scroll-margin-top: 112px; }
+    body {
+      font-family: 'Source Sans 3', Verdana, sans-serif;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(246, 192, 38, .24), transparent 24%),
+        radial-gradient(circle at 88% 4%, rgba(59, 110, 42, .14), transparent 28%),
+        linear-gradient(180deg, #fff9ed 0%, #f2ede3 44%, #eadfc9 100%);
+      color: #2B2B2B;
+    }
+    .display { font-family: 'Fraunces', Georgia, serif; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+    .paper-grid {
+      background-image:
+        linear-gradient(rgba(43,43,43,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(43,43,43,.055) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .field-lines {
+      background:
+        linear-gradient(90deg, transparent 0 47%, rgba(168,57,44,.26) 47% 47.5%, transparent 47.5% 100%),
+        radial-gradient(circle at 50% 50%, transparent 0 18%, rgba(168,57,44,.20) 18.3% 18.8%, transparent 19% 100%);
+    }
+    .scribble { text-decoration: underline; text-decoration-color: #F6C026; text-decoration-thickness: .18em; text-underline-offset: -.04em; text-decoration-skip-ink: none; }
+    .clip-note { clip-path: polygon(0 0, 96% 0, 100% 10%, 100% 100%, 4% 100%, 0 90%); }
+    .archive-tape { position: relative; }
+    .archive-tape::before { content: ''; position: absolute; left: 50%; top: -14px; width: 92px; height: 28px; transform: translateX(-50%) rotate(-2deg); background: rgba(246,192,38,.62); border: 1px solid rgba(43,43,43,.16); }
+    .vertical-note { writing-mode: vertical-rl; text-orientation: mixed; }
+    .load-in { animation: rise .7s ease both; }
+    .load-in:nth-child(2) { animation-delay: .08s; }
+    .load-in:nth-child(3) { animation-delay: .16s; }
+    a:focus-visible { outline: 3px solid #F6C026; outline-offset: 4px; }
+    .touch-card { transition: transform .22s ease, border-color .22s ease, background-color .22s ease; }
+    .touch-card:hover { transform: translateY(-4px); }
+    header nav[aria-label="Navegação mobile"] { scroll-snap-type: x proximity; scrollbar-width: none; }
+    header nav[aria-label="Navegação mobile"]::-webkit-scrollbar { display: none; }
+    header nav[aria-label="Navegação mobile"] a { scroll-snap-align: start; display: inline-flex; min-height: 44px; align-items: center; }
+
+    .hero-title { font-size: clamp(2.9rem, 9.8vw, 6.6rem); }
+    .publication-line { position: relative; }
+    .publication-line::before { content: ''; position: absolute; left: .7rem; top: .5rem; bottom: .5rem; width: 2px; background: linear-gradient(#A8392C, #F6C026, #3B6E2A); opacity: .45; }
+    .publication-item { position: relative; padding-left: 2.6rem; }
+    .publication-item::before { content: ''; position: absolute; left: .28rem; top: .35rem; width: 1.05rem; height: 1.05rem; border-radius: 999px; background: #FFF9ED; border: 3px solid #2B2B2B; box-shadow: 0 0 0 5px rgba(246,192,38,.35); }
+
+    .preview-card { display: grid; grid-template-columns: minmax(0,.72fr) minmax(0,1fr); gap: 1rem; min-height: 15.5rem; }
+    .preview-media { position: relative; min-height: 12rem; overflow: hidden; border-radius: 1rem; border: 1px solid rgba(43,43,43,.18); background: radial-gradient(circle at 24% 18%, rgba(246,192,38,.72), transparent 34%), linear-gradient(135deg, rgba(168,57,44,.96), rgba(59,110,42,.9)); }
+    .preview-media img { width: 100%; height: 100%; min-height: 12rem; object-fit: cover; display: block; filter: saturate(.95) contrast(1.05); }
+    .preview-media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 44%, rgba(43,43,43,.58)); pointer-events: none; }
+    .preview-domain { position: absolute; left: .8rem; bottom: .75rem; z-index: 1; border-radius: 999px; background: rgba(255,249,237,.92); padding: .38rem .65rem; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #2B2B2B; }
+    .preview-symbol { position: absolute; inset: 0; display: grid; place-items: center; color: rgba(255,249,237,.9); font-family: 'Fraunces', Georgia, serif; font-size: clamp(3.4rem, 8vw, 6rem); font-weight: 700; letter-spacing: -.08em; }
+    .play-mark { position: absolute; left: 50%; top: 50%; z-index: 1; display: grid; height: 3.8rem; width: 3.8rem; transform: translate(-50%,-50%); place-items: center; border-radius: 999px; background: rgba(255,249,237,.92); color: #A8392C; box-shadow: 0 18px 40px rgba(43,43,43,.24); }
+    .play-mark::before { content: ''; margin-left: .18rem; border-bottom: .72rem solid transparent; border-left: 1.05rem solid currentColor; border-top: .72rem solid transparent; }
+    .preview-card:hover .preview-media img { transform: scale(1.035); transition: transform .35s ease; }
+    @media (max-width: 760px) { .preview-card { grid-template-columns: 1fr; min-height: auto; } .preview-media, .preview-media img { min-height: 11rem; } }
+
+    .form-field { width: 100%; border: 1px solid rgba(43,43,43,.22); background: #FFF9ED; padding: .95rem 1rem; font: inherit; color: #2B2B2B; }
+    .form-field:focus { outline: 3px solid #F6C026; outline-offset: 2px; border-color: #2B2B2B; }
+    .form-label { display: block; margin-bottom: .45rem; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #6E675B; }
+    .form-hint { font-size: .9rem; line-height: 1.5; color: #6E675B; }
+    @media (max-width: 767px) {
+      .hero-section { padding-top: 2.75rem; padding-bottom: 3.25rem; }
+      .hero-title { font-size: clamp(2.65rem, 12.2vw, 3.85rem); line-height: .88; letter-spacing: -.055em; }
+      .hero-copy { font-size: 1.08rem; line-height: 1.65; }
+      .hero-note { margin-top: 1rem; }
+      .hero-actions { margin-top: 1.35rem; }
+      .hero-photo-main { height: 330px; }
+      .hero-photo-side { height: 190px; }
+      .publication-line::before { left: .55rem; }
+      .publication-item { padding-left: 2.25rem; }
+      .publication-item::before { left: .12rem; }
+    }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .load-in { animation: none; } }
+  
+    .site-mobile-nav { scroll-snap-type: x proximity; scrollbar-width: none; }
+    .site-mobile-nav::-webkit-scrollbar { display: none; }
+    .site-mobile-nav a { scroll-snap-align: start; display: inline-flex; min-height: 44px; align-items: center; }
+    .site-nav-link[aria-current="page"], .site-nav-link[aria-current="true"] { color: #2B2B2B; }
+  
+    .mobile-menu-toggle { min-height: 44px; min-width: 44px; }
+    .mobile-menu-shell[hidden], .mobile-menu-backdrop[hidden] { display: none; }
+    .mobile-menu-backdrop { position: fixed; inset: 0; z-index: 48; background: rgba(43,43,43,.34); backdrop-filter: blur(6px); }
+    .mobile-menu-shell { position: fixed; left: .75rem; right: .75rem; top: 4.75rem; z-index: 49; max-height: calc(100vh - 5.5rem); overflow-y: auto; border: 1px solid rgba(43,43,43,.24); border-radius: 1.6rem; background: #FFF9ED; box-shadow: 0 28px 90px rgba(43,43,43,.24); }
+    .mobile-menu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+    .mobile-menu-link { display: flex; min-height: 4.25rem; flex-direction: column; justify-content: center; border-radius: 1rem; border: 1px solid rgba(43,43,43,.14); background: rgba(242,237,227,.78); padding: .85rem .95rem; color: #2B2B2B; }
+    .mobile-menu-link strong { font-size: .95rem; line-height: 1.1; }
+    .mobile-menu-link span { margin-top: .25rem; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: #6E675B; }
+    .mobile-menu-link:hover, .mobile-menu-link:focus-visible { border-color: #2B2B2B; background: #F6C026; }
+    .mobile-menu-cta { display: flex; min-height: 3.2rem; align-items: center; justify-content: center; border-radius: 999px; background: #2B2B2B; padding: .85rem 1rem; font-weight: 900; color: #FFF9ED; }
+    body.menu-open { overflow: hidden; }
+    @media (min-width: 1024px) { .mobile-menu-shell, .mobile-menu-backdrop { display: none !important; } body.menu-open { overflow: auto; } }
+  </style>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:site_name" content="Homo Ludens Blog" />
+  <link rel="sitemap" type="application/xml" href="https://homoludens.blog/sitemap.xml" />
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://homoludens.blog/#sebastian","name":"Sebastián Acevedo Vásquez","url":"https://homoludens.blog/sobre.html","sameAs":["https://www.linkedin.com/in/homoludens3","https://instagram.com/homoludens3"]},{"@type":"Blog","@id":"https://homoludens.blog/#blog","name":"Homo Ludens Blog","url":"https://homoludens.blog/","description":"Caderno publico de Sebastián Acevedo Vásquez para pensar esporte, educacao, cultura e vida em movimento pelo jogo.","inLanguage":"pt-BR","author":{"@id":"https://homoludens.blog/#sebastian"}},{"@type":"WebSite","@id":"https://homoludens.blog/#website","name":"Homo Ludens Blog","url":"https://homoludens.blog/","inLanguage":"pt-BR","publisher":{"@id":"https://homoludens.blog/#sebastian"}}]}
+  </script>
+
+  <style id="hl-footer-style">
+    .hl-footer { --hl-papel:#F2EDE3; --hl-claro:#FFF9ED; --hl-grafite:#2B2B2B; --hl-tinta:#6E675B; --hl-linha:#D8CDB8; --hl-folha:#3B6E2A; --hl-terra:#D87A3B; --hl-quadra:#A8392C; --hl-sol:#F6C026; --hl-travessia:#2C6BB5; border-top: 1px solid var(--hl-linha); background: linear-gradient(180deg, rgba(255,249,237,.78), var(--hl-papel)); color: var(--hl-grafite); }
+    .hl-footer a { color: inherit; text-decoration: none; }
+    .hl-footer a:hover { color: var(--hl-folha); }
+    .hl-footer a:focus-visible { outline: 3px solid var(--hl-sol); outline-offset: 4px; border-radius: .5rem; }
+    .hl-footer__wrap { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3rem 0 1.4rem; }
+    .hl-footer__grid { display: grid; gap: 2rem; }
+    .hl-footer__wordmark { font-family: 'Fraunces', Georgia, serif; font-size: clamp(2.2rem, 8vw, 4.4rem); line-height: .9; letter-spacing: -.045em; }
+    .hl-footer__tagline { margin-top: 1rem; max-width: 22rem; font-size: 1.04rem; line-height: 1.55; color: var(--hl-tinta); }
+    .hl-footer__micro, .hl-footer__eyebrow, .hl-footer__bottom { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+    .hl-footer__micro { margin-top: 1.3rem; display: inline-flex; border: 1px solid var(--hl-linha); border-radius: 999px; background: var(--hl-claro); padding: .55rem .75rem; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--hl-tinta); }
+    .hl-footer__eyebrow { margin: 0 0 .9rem; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--hl-quadra); }
+    .hl-footer__list { display: grid; gap: .62rem; margin: 0; padding: 0; list-style: none; }
+    .hl-footer__list a { display: inline-flex; min-height: 2.75rem; align-items: center; font-weight: 800; color: var(--hl-grafite); }
+    .hl-footer__manifesto { max-width: 22rem; margin: 0; color: var(--hl-tinta); font-size: 1.08rem; line-height: 1.6; }
+    .hl-footer__stamp { margin-top: 1rem; width: fit-content; border-left: 4px solid var(--hl-terra); background: var(--hl-claro); padding: .7rem .85rem; color: var(--hl-grafite); font-weight: 800; }
+    .hl-footer__bottom { display: flex; flex-direction: column; gap: .7rem; margin-top: 2.4rem; border-top: 1px solid rgba(43,43,43,.14); padding-top: 1rem; color: var(--hl-tinta); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+    @media (min-width: 768px) { .hl-footer__grid { grid-template-columns: 1.35fr .85fr 1.05fr 1.15fr; align-items: start; } .hl-footer__bottom { flex-direction: row; justify-content: space-between; } }
+  </style>
+</head>
+<body class="antialiased">
+  <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-grafite focus:px-4 focus:py-2 focus:text-claro">Pular para o conteúdo</a>
+
+  <header class="sticky top-0 z-40 border-b border-linha/80 bg-papel/88 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-5 py-4 md:px-8">
+      <a href="#inicio" class="group flex min-w-0 items-center gap-3" aria-label="Homo Ludens Blog">
+        <span class="display flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-grafite bg-claro text-xl font-bold">HL</span>
+        <span class="min-w-0 leading-tight">
+          <span class="block truncate text-sm font-black uppercase tracking-[.14em]">Homo Ludens Blog</span>
+          <span class="mono hidden text-[10px] text-tinta sm:block">um caderno para pensar o mundo pelo jogo</span>
+        </span>
+      </a>
+      <nav class="hidden items-center gap-5 text-[11px] font-black uppercase tracking-[.18em] text-tinta lg:flex" aria-label="Navegação principal">
+        <a href="#inicio" class="site-nav-link hover:text-grafite">Início</a>
+        <a href="#caderno" class="site-nav-link hover:text-grafite">Caderno</a>
+        <a href="#corpo" class="site-nav-link hover:text-grafite">Corpo</a>
+        <a href="#metodo" class="site-nav-link hover:text-grafite">Método</a>
+        <a href="#palavra" class="site-nav-link hover:text-grafite">Palavra</a>
+        <a href="#circulacao" class="site-nav-link hover:text-grafite">Circulação</a>
+        <a href="#colaborar" class="site-nav-link hover:text-grafite">Colaborar</a>
+        <a href="sobre.html" class="site-nav-link hover:text-grafite">Sobre</a>
+      </nav>
+      <div class="flex shrink-0 items-center gap-2">
+        <a href="#colaborar" class="hidden min-h-11 items-center justify-center rounded-full border border-grafite bg-grafite px-5 py-2 text-sm font-black text-claro hover:bg-folha sm:inline-flex">Convidar</a>
+        <button type="button" class="mobile-menu-toggle inline-flex items-center gap-2 rounded-full border border-grafite bg-claro px-4 py-2 text-xs font-black uppercase tracking-[.16em] text-grafite lg:hidden" aria-controls="mobile-menu-panel" aria-expanded="false" data-mobile-menu-toggle>
+          Menu
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+    <button type="button" class="mobile-menu-backdrop lg:hidden" aria-label="Fechar menu" hidden data-mobile-menu-backdrop></button>
+    <nav id="mobile-menu-panel" class="mobile-menu-shell lg:hidden" aria-label="Menu mobile" hidden>
+      <div class="p-4">
+        <div class="mb-4 flex items-start justify-between gap-4">
+          <div>
+            <p class="mono text-[10px] font-semibold uppercase tracking-[.22em] text-quadra">Navegar</p>
+            <p class="display mt-1 text-2xl font-semibold leading-tight">Escolha por onde entrar.</p>
+          </div>
+          <span class="rounded-full bg-sol px-3 py-1 text-xs font-black text-grafite">HL</span>
+        </div>
+        <div class="mobile-menu-grid">
+          <a href="#inicio" class="mobile-menu-link"><strong>Início</strong><span aria-hidden="true">começar</span></a>
+          <a href="#caderno" class="mobile-menu-link"><strong>Caderno</strong><span aria-hidden="true">escritos</span></a>
+          <a href="#corpo" class="mobile-menu-link"><strong>Corpo</strong><span aria-hidden="true">prática</span></a>
+          <a href="#metodo" class="mobile-menu-link"><strong>Método</strong><span aria-hidden="true">como pensa</span></a>
+          <a href="#palavra" class="mobile-menu-link"><strong>Palavra</strong><span aria-hidden="true">fala pública</span></a>
+          <a href="#circulacao" class="mobile-menu-link"><strong>Circulação</strong><span aria-hidden="true">mundo</span></a>
+          <a href="#colaborar" class="mobile-menu-link"><strong>Colaborar</strong><span aria-hidden="true">convites</span></a>
+          <a href="sobre.html" class="mobile-menu-link"><strong>Sobre</strong><span aria-hidden="true">projeto</span></a>
+        </div>
+        <a href="#colaborar" class="mobile-menu-cta mt-4">Propor colaboração</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero-section relative overflow-hidden px-5 py-16 md:px-8 md:py-24">
+      <div class="absolute inset-0 field-lines opacity-40" aria-hidden="true"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
+        <div class="load-in">
+          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-quadra">Caderno público de Sebastián Acevedo Vásquez</p>
+          <h1 class="hero-title display mt-6 max-w-5xl font-semibold leading-[.86] tracking-[-.06em]">Sebastián pensa com a bola em campo aberto.</h1>
+          <p class="hero-copy mt-7 max-w-2xl text-xl leading-8 text-tinta md:text-2xl md:leading-9">Mentalidade de atleta, escuta de educador, gesto de pesquisador, palavra pública e corpo em jogo atravessam comunidades, universidades, mídia, projetos sociais e territórios em movimento.</p>
+          <p class="hero-note mono mt-5 inline-block rotate-[-2deg] bg-sol px-3 py-2 text-sm font-semibold text-grafite">la cancha también piensa</p>
+          <p class="mt-8 max-w-2xl text-lg leading-8 text-grafite/80">A mistura é o próprio método: viver o jogo, observar o mundo, transformar experiência em linguagem pública.</p>
+          <div class="hero-actions mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#corpo" class="inline-flex min-h-12 items-center justify-center rounded-full bg-grafite px-6 py-3 text-sm font-black text-claro hover:bg-folha">Entrar pelo corpo</a>
+            <a href="#caderno" class="inline-flex min-h-12 items-center justify-center rounded-full border border-grafite/30 bg-claro px-6 py-3 text-sm font-black text-grafite hover:border-grafite">Entrar no caderno</a>
+            <a href="#colaborar" class="inline-flex min-h-12 items-center justify-center rounded-full border border-terra bg-terra px-6 py-3 text-sm font-black text-grafite hover:bg-sol">Colaborar</a>
+          </div>
+        </div>
+        <aside class="load-in archive-tape border border-linha bg-claro p-4 shadow-papel md:p-5">
+          <div class="grid gap-3 sm:grid-cols-[1fr_.72fr]">
+            <img src="assets/homoludens-hero-palestra-camisas.jpg" alt="Palestra com bola no pé e arquivo de camisas de futebol" class="hero-photo-main h-[420px] w-full object-cover object-[50%_42%] grayscale-[6%] sm:h-[560px]" loading="eager" />
+            <div class="grid gap-3">
+              <img src="assets/prova-roda-dialogo-gesto.jpg" alt="Roda de diálogo com gesto expressivo em oficina" class="hero-photo-side h-48 w-full object-cover grayscale-[10%] sm:h-full" loading="eager" />
+              <div class="flex min-h-44 flex-col justify-between bg-grafite p-4 text-claro">
+                <p class="mono text-[10px] uppercase tracking-[.22em] text-sol">nota de margem</p>
+                <p class="display text-2xl leading-tight">Nem toda ideia nasce sentada.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-start justify-between gap-4 border-t border-linha pt-4">
+            <p class="mono text-xs uppercase tracking-[.18em] text-tinta">figura inteira</p>
+            <p class="max-w-xs text-right text-sm leading-5 text-tinta">Corpo, método, palavra e circulação no mesmo campo.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-label="Forças editoriais" class="border-y border-grafite bg-grafite px-5 py-4 text-claro md:px-8">
+      <div class="mx-auto grid max-w-7xl gap-3 text-sm md:grid-cols-5">
+        <p class="mono uppercase tracking-[.2em] text-sol">quatro forças</p>
+        <a href="#corpo" class="block hover:text-sol"><strong>Corpo.</strong> Técnica, rito, memória de atleta.</a>
+        <a href="#metodo" class="block hover:text-sol"><strong>Método.</strong> Roda, escuta, jogo, pergunta.</a>
+        <a href="#palavra" class="block hover:text-sol"><strong>Palavra.</strong> Aula, palco, pesquisa, pensamento.</a>
+        <a href="#circulacao" class="block hover:text-sol"><strong>Circulação.</strong> Mídia, universidade, território, projeto.</a>
+      </div>
+    </section>
+
+    <section id="percurso" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.82fr_1.18fr] lg:items-center">
+        <div>
+          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-travessia">Percurso</p>
+          <h2 class="display mt-5 text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">Uma vida pensando com o jogo.</h2>
+          <div class="mt-7 space-y-5 text-xl leading-9 text-grafite/82">
+            <p>A bola aparece em campo, na roda, no palco, na rádio, na universidade, no bairro, na escrita e no projeto social. Cada aparição carrega um pedaço da mesma pergunta.</p>
+            <p>O atleta aprendeu a ler espaços. O educador aprendeu a escutar processos. O pesquisador aprendeu a transformar cenas em linguagem. O articulador aprendeu a fazer a pergunta circular.</p>
+            <p>Homo Ludens nasce dessa travessia: corpo que percebe, método que reúne, palavra que organiza e circulação que abre caminho para novas colaborações.</p>
+          </div>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2">
+          <figure class="archive-tape border border-grafite bg-claro p-3 shadow-papel md:translate-y-8">
+            <img src="assets/homoludens-cabeca-praia.jpg" alt="Corpo em movimento com bola na praia" class="h-[420px] w-full object-cover object-[50%_42%]" loading="lazy" />
+            <figcaption class="mono mt-3 text-xs uppercase tracking-[.18em] text-tinta">corpo que percebe</figcaption>
+          </figure>
+          <figure class="border border-grafite bg-sol p-3 shadow-papel">
+            <img src="assets/homoludens-roda-quadra-reinsercion.jpg" alt="Roda em quadra com grupo de reinserção social" class="h-[300px] w-full object-cover object-[50%_45%]" loading="lazy" />
+            <figcaption class="mono mt-3 text-xs uppercase tracking-[.18em] text-grafite">método que cuida</figcaption>
+          </figure>
+          <figure class="border border-grafite bg-grafite p-3 text-claro shadow-papel">
+            <img src="assets/prova2-paulo-freire-palco.jpg" alt="Palco com referência a Paulo Freire e bola" class="h-[300px] w-full object-cover" loading="lazy" />
+            <figcaption class="mono mt-3 text-xs uppercase tracking-[.18em] text-sol">palavra que organiza</figcaption>
+          </figure>
+          <figure class="archive-tape border border-grafite bg-claro p-3 shadow-papel md:-translate-y-8">
+            <img src="assets/prova2-mural-cidade.jpg" alt="Mural urbano como memória de território" class="h-[420px] w-full object-cover" loading="lazy" />
+            <figcaption class="mono mt-3 text-xs uppercase tracking-[.18em] text-tinta">território que guarda memória</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="manifesto" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto max-w-6xl rounded-[2rem] border border-linha bg-claro p-7 shadow-papel md:p-12">
+        <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-folha">Manifesto</p>
+        <h2 class="display mt-5 max-w-4xl text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">Homo Ludens abre uma forma de olhar.</h2>
+        <div class="mt-8 grid gap-8 text-xl leading-9 text-grafite/82 md:grid-cols-[1fr_.9fr]">
+          <div class="space-y-5">
+            <p>Huizinga ajuda a lembrar que o jogo também cria cultura.</p>
+            <p>Sebastián leva essa intuição para outro chão: a pelada, a escola, o recreio, o futsal, a rua, o Brasil, o Chile, o Nordeste, Abya Yala e os corpos que aprendem enquanto se movem.</p>
+            <p>Nesse chão, o jogo lê a realidade com corpo, gesto, regra, memória e encontro.</p>
+            <p>Por isso este caderno existe: para pensar esporte, educação, cultura, tecnologia e vida em movimento com os pés no chão, a bola em movimento e o coração aberto.</p>
+          </div>
+          <aside class="archive-tape rotate-[-1deg] border border-grafite bg-sol p-6 text-grafite shadow-papel md:p-8">
+            <p class="mono text-xs uppercase tracking-[.22em]">frase de trabalho</p>
+            <p class="display mt-5 text-2xl font-semibold leading-tight">Uma cancha pensa com corpos, vínculos e memória.</p>
+            <p class="mt-6 text-base leading-7">Essa é a chave da casa: olhar o jogo como linguagem social, onde cada gesto organiza mundo.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="caderno" class="paper-grid px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-3xl">
+          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-folha">Caderno</p>
+          <h2 class="display mt-5 text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">Um arquivo vivo de perguntas em movimento.</h2>
+          <p class="mt-6 text-xl leading-8 text-tinta">O caderno organiza textos, notas e séries que nascem de cenas concretas: uma bola rolando, uma aula que muda de rumo, uma viagem, uma conversa, uma leitura, uma pergunta que fica.</p>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="border border-linha bg-claro p-6 shadow-papel"><p class="mono text-xs uppercase tracking-[.2em] text-terra">entrada</p><h3 class="display mt-4 text-2xl font-semibold">Ensaios</h3><p class="mt-3 leading-7 text-tinta">Textos mais longos para desenvolver ideias sobre jogo, cultura, educação, tecnologia e território.</p></article>
+          <article class="border border-linha bg-claro p-6 shadow-papel"><p class="mono text-xs uppercase tracking-[.2em] text-folha">registro</p><h3 class="display mt-4 text-2xl font-semibold">Notas de campo</h3><p class="mt-3 leading-7 text-tinta">Registros curtos de viagens, aulas, encontros, quadras, projetos e conversas que deixam perguntas abertas.</p></article>
+          <article class="border border-linha bg-claro p-6 shadow-papel"><p class="mono text-xs uppercase tracking-[.2em] text-quadra">pergunta</p><h3 class="display mt-4 text-2xl font-semibold">Perguntas de jogo</h3><p class="mt-3 leading-7 text-tinta">Pequenas teses para olhar o esporte como linguagem social: quem entra, quem fica fora, quem decide a regra, quem cuida.</p></article>
+          <article class="border border-linha bg-claro p-6 shadow-papel"><p class="mono text-xs uppercase tracking-[.2em] text-travessia">biblioteca</p><h3 class="display mt-4 text-2xl font-semibold">Pensar com...</h3><p class="mt-3 leading-7 text-tinta">Diálogos com autores, livros e ideias que ajudam a pensar o jogo desde a América Latina.</p></article>
+        </div>
+        <div class="mt-8 grid gap-5 lg:grid-cols-[1.12fr_.88fr]">
+          <a href="posts/uma-cancha-tambem-pensa.html" class="block rounded-[1.5rem] border border-grafite bg-grafite p-7 text-claro transition hover:-translate-y-1 hover:bg-folha md:p-9">
+            <p class="mono text-xs uppercase tracking-[.22em] text-sol">entrada inaugural</p>
+            <h3 class="display mt-3 text-2xl font-semibold">Uma cancha também pensa</h3>
+            <p class="mt-4 max-w-3xl text-lg leading-8 text-claro/78">Uma quadra guarda regras inventadas, memórias do corpo, pequenas formas de justiça, pertencimentos, conflitos e modos de aprender juntos.</p>
+            <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-sol">Ler ensaio</p>
+          </a>
+          <a href="posts/quando-a-aula-comeca-antes-do-apito.html" class="block rounded-[1.5rem] border border-linha bg-claro p-7 text-grafite shadow-papel transition hover:-translate-y-1 hover:border-grafite md:p-9">
+            <p class="mono text-xs uppercase tracking-[.22em] text-folha">nota de campo</p>
+            <h3 class="display mt-3 text-2xl font-semibold">Quando a aula começa antes do apito</h3>
+            <p class="mt-4 text-lg leading-8 text-tinta">A chegada já escreve a primeira página da aula. O grupo entra, o corpo fala e a quadra revela o que precisa ser aprendido.</p>
+            <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-folha">Ler nota</p>
+          </a>
+        </div>
+        <div class="mt-12 border-t border-grafite pt-8">
+          <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-quadra">Publicações por aí</p>
+              <h3 class="display mt-3 text-2xl font-semibold tracking-[-.025em] md:text-4xl">Textos, entrevistas e intervenções que já circularam.</h3>
+            </div>
+            <p class="max-w-md text-base leading-7 text-tinta">Uma pequena estante externa: artigos, opinião pública, mídia esportiva e fala institucional.</p>
+          </div>
+          <div class="publication-line mt-8 grid gap-5 lg:grid-cols-2">
+            <a href="https://universidadedofutebol.com.br/2026/04/27/sem-conseguir-ser-crianca-flora-nao-floresce/" target="_blank" rel="noopener noreferrer" aria-label="Abrir publicação Sem conseguir ser criança, Flora não floresce" class="publication-item preview-card touch-card group rounded-[1.35rem] border border-linha bg-claro p-5 shadow-papel hover:border-grafite">
+              <div class="preview-media" aria-hidden="true"><span class="preview-symbol">UF</span><span class="preview-domain">universidadedofutebol.com.br</span></div>
+              <div class="flex flex-col justify-between">
+                <div><p class="mono text-xs uppercase tracking-[.2em] text-folha">2026 / Artigo</p><h4 class="display mt-3 text-2xl font-semibold leading-tight">Sem conseguir ser criança, Flora não floresce</h4><p class="mt-4 leading-7 text-tinta">Infância, desenvolvimento e direito de florescer como leitura sensível do esporte e da educação.</p></div>
+                <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-tinta group-hover:text-grafite">Abrir publicação externa</p>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=drLxWZwP3qM" target="_blank" rel="noopener noreferrer" aria-label="Assistir intervenção na Comissão de Ciência e Tecnologia no YouTube" class="publication-item preview-card touch-card group rounded-[1.35rem] border border-grafite bg-grafite p-5 text-claro shadow-papel hover:bg-folha">
+              <div class="preview-media"><img src="https://img.youtube.com/vi/drLxWZwP3qM/hqdefault.jpg" alt="Miniatura do vídeo Intervenção na Comissão de Ciência e Tecnologia" loading="lazy" /><span class="play-mark" aria-hidden="true"></span><span class="preview-domain">youtube.com</span></div>
+              <div class="flex flex-col justify-between">
+                <div><p class="mono text-xs uppercase tracking-[.2em] text-sol">Vídeo / YouTube</p><h4 class="display mt-3 text-2xl font-semibold leading-tight">Intervenção na Comissão de Ciência e Tecnologia</h4><p class="mt-4 leading-7 text-claro/78">Fala institucional sobre esporte, inovação e política pública em espaço legislativo.</p></div>
+                <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-sol">Assistir vídeo</p>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Xb1_u0aRfM8&t=1s" target="_blank" rel="noopener noreferrer" aria-label="Assistir Despedida de Marcelo Salas no YouTube" class="publication-item preview-card touch-card group rounded-[1.35rem] border border-grafite bg-grafite p-5 text-claro shadow-papel hover:bg-folha lg:col-span-2">
+              <div class="preview-media"><img src="https://img.youtube.com/vi/Xb1_u0aRfM8/hqdefault.jpg" alt="Miniatura do vídeo Despedida de Marcelo Salas" loading="lazy" /><span class="play-mark" aria-hidden="true"></span><span class="preview-domain">youtube.com</span></div>
+              <div class="flex flex-col justify-between">
+                <div><p class="mono text-xs uppercase tracking-[.2em] text-sol">Vídeo / Arquivo vivo</p><h4 class="display mt-3 text-2xl font-semibold leading-tight">Despedida de Marcelo Salas - Ataka Freestyle Football LP</h4><p class="mt-4 max-w-2xl leading-7 text-claro/78">Registro audiovisual que ancora o caderno em memória concreta: futebol, corpo, celebração pública e cultura de rua em movimento.</p></div>
+                <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-sol">Assistir no YouTube</p>
+              </div>
+            </a>
+            <a href="https://idealex.press/carcel-deporte-y-la-convencion-constitucional/" target="_blank" rel="noopener noreferrer" aria-label="Abrir coluna Cárcel, deporte y la Convención Constitucional" class="publication-item preview-card touch-card group rounded-[1.35rem] border border-linha bg-claro p-5 shadow-papel hover:border-grafite">
+              <div class="preview-media" aria-hidden="true"><span class="preview-symbol">IX</span><span class="preview-domain">idealex.press</span></div>
+              <div class="flex flex-col justify-between">
+                <div><p class="mono text-xs uppercase tracking-[.2em] text-travessia">Coluna / Idealex</p><h4 class="display mt-3 text-2xl font-semibold leading-tight">Cárcel, deporte y la Convención Constitucional</h4><p class="mt-4 leading-7 text-tinta">Direitos humanos, reinserção e esporte como linguagem de inclusão social.</p></div>
+                <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-tinta group-hover:text-grafite">Abrir coluna</p>
+              </div>
+            </a>
+            <a href="https://www.meutimao.com.br/noticias-do-corinthians/336669/como-o-corinthians-serviu-de-inspiracao-para-torcedor-chileno-mudar-vida-de-jovens-do-seu-pais" target="_blank" rel="noopener noreferrer" aria-label="Abrir matéria sobre Corinthians e juventude" class="publication-item preview-card touch-card group rounded-[1.35rem] border border-linha bg-claro p-5 shadow-papel hover:border-grafite">
+              <div class="preview-media" aria-hidden="true"><span class="preview-symbol">CT</span><span class="preview-domain">meutimao.com.br</span></div>
+              <div class="flex flex-col justify-between">
+                <div><p class="mono text-xs uppercase tracking-[.2em] text-grafite">Matéria / Meu Timão</p><h4 class="display mt-3 text-2xl font-semibold leading-tight">Como o Corinthians serviu de inspiração para torcedor chileno mudar vida de jovens do seu país</h4><p class="mt-4 leading-7 text-tinta">Torcida, vínculo, juventude e transformação social pelo futebol.</p></div>
+                <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-tinta group-hover:text-grafite">Abrir matéria</p>
+              </div>
+            </a>
+            <a href="https://ludopedio.org.br/arquibancada/jugando-en-equipo-lo-damos-vuelta/" target="_blank" rel="noopener noreferrer" aria-label="Abrir artigo Jugando en equipo, lo damos vuelta" class="publication-item preview-card touch-card group rounded-[1.35rem] border border-linha bg-claro p-5 shadow-papel hover:border-grafite">
+              <div class="preview-media" aria-hidden="true"><span class="preview-symbol">LD</span><span class="preview-domain">ludopedio.org.br</span></div>
+              <div class="flex flex-col justify-between">
+                <div><p class="mono text-xs uppercase tracking-[.2em] text-terra">Artigo / Ludopédio</p><h4 class="display mt-3 text-2xl font-semibold leading-tight">Jugando en equipo, lo damos vuelta</h4><p class="mt-4 leading-7 text-tinta">Estratégia coletiva, confiança e rede colaborativa como modo de virar o jogo.</p></div>
+                <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-tinta group-hover:text-grafite">Abrir artigo</p>
+              </div>
+            </a>
+            <a href="https://www.elmostrador.cl/noticias/opinion/2015/01/01/por-una-educacion-social/" target="_blank" rel="noopener noreferrer" aria-label="Abrir opinião Por una educación social" class="publication-item preview-card touch-card group rounded-[1.35rem] border border-linha bg-claro p-5 shadow-papel hover:border-grafite">
+              <div class="preview-media" aria-hidden="true"><span class="preview-symbol">EM</span><span class="preview-domain">elmostrador.cl</span></div>
+              <div class="flex flex-col justify-between">
+                <div><p class="mono text-xs uppercase tracking-[.2em] text-quadra">2015 / Opinião</p><h4 class="display mt-3 text-2xl font-semibold leading-tight">Por una educación social</h4><p class="mt-4 leading-7 text-tinta">Uma defesa pública da educação como construção social que vai além da sala de aula.</p></div>
+                <p class="mono mt-5 text-xs uppercase tracking-[.2em] text-tinta group-hover:text-grafite">Abrir opinião</p>
+              </div>
+            </a>
+          </div>div>
+        </div>
+      </div>
+    </section>
+
+    <section id="corpo" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
+        <div>
+          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-quadra">Corpo</p>
+          <h2 class="display mt-5 text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">O jogo começa no corpo que aprendeu a perceber.</h2>
+        </div>
+        <div class="rounded-[2rem] border border-linha bg-claro p-7 md:p-9">
+          <p class="text-xl leading-8 text-grafite/82">Sebastián Acevedo Vásquez é ex-atleta, educador, pesquisador independente, professor universitário e articulador de ecossistemas entre Brasil, Chile e América Latina.</p>
+          <p class="mt-5 text-xl leading-8 text-grafite/82">Sua trajetória cruza esporte, direito, educação, inovação, cultura popular, políticas públicas e projetos sociais. Essa mistura aparece como lugar de fala: alguém que pensa com o corpo, escuta o território e transforma experiência em método.</p>
+          <div class="mt-8 grid gap-3 sm:grid-cols-2">
+            <p class="border-l-4 border-folha bg-papel px-4 py-3 font-bold">Ex-atleta e educador</p>
+            <p class="border-l-4 border-terra bg-papel px-4 py-3 font-bold">Professor universitário no Chile</p>
+            <p class="border-l-4 border-travessia bg-papel px-4 py-3 font-bold">Cofundador da SportsCoLab</p>
+            <p class="border-l-4 border-quadra bg-papel px-4 py-3 font-bold">Articulador Brasil-Chile</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodo" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto max-w-7xl">
+        <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-quadra">Método</p>
+        <h2 class="display mt-5 max-w-4xl text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">Quatro portas para praticar a mesma pergunta.</h2>
+        <div class="mt-10 grid gap-4 md:grid-cols-2">
+          <article class="rounded-[1.6rem] bg-folha p-7 text-claro"><h3 class="display text-2xl font-semibold">Jogo e cultura</h3><p class="mt-4 text-lg leading-8 text-claro/82">O jogo como linguagem, rito, regra, disputa, festa, memória e forma de produzir comunidade.</p></article>
+          <article class="rounded-[1.6rem] bg-terra p-7 text-grafite"><h3 class="display text-2xl font-semibold">Educação em movimento</h3><p class="mt-4 text-lg leading-8 text-grafite/82">Aprendizagem que passa pelo corpo, pela brincadeira, pela convivência, pelo erro e pela experiência compartilhada.</p></article>
+          <article class="rounded-[1.6rem] bg-travessia p-7 text-claro"><h3 class="display text-2xl font-semibold">Território e memória</h3><p class="mt-4 text-lg leading-8 text-claro/82">Cancha, bairro, rua, escola, periferia, viagem, arquivo vivo. O lugar também ensina.</p><p class="mono mt-5 inline-block bg-claro px-3 py-2 text-xs text-grafite">caminar el territorio también es investigar</p></article>
+          <article class="rounded-[1.6rem] bg-quadra p-7 text-claro"><h3 class="display text-2xl font-semibold">Inovação com critério humano</h3><p class="mt-4 text-lg leading-8 text-claro/82">Tecnologia, sportstech, ecossistemas e política pública com pessoas, vínculos e consequências no centro.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="palavra" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+        <div>
+          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-travessia">Palavra</p>
+          <h2 class="display mt-5 text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">Uma biblioteca para pensar, escrever e falar com outros.</h2>
+          <p class="mt-6 text-xl leading-8 text-tinta">Ninguém pensa sozinho. Este caderno conversa com autores, livros, experiências, comunidades e memórias que ajudam a olhar o jogo desde outro lugar.</p>
+        </div>
+        <div class="grid gap-3 sm:grid-cols-2">
+          <p class="bg-claro p-5 font-black shadow-papel">Autores e referências</p>
+          <p class="bg-claro p-5 font-black shadow-papel">Livros e fichas</p>
+          <p class="bg-claro p-5 font-black shadow-papel">Trilhas de estudo</p>
+          <p class="bg-claro p-5 font-black shadow-papel">Glossario vivo</p>
+          <p class="bg-sol p-5 font-black shadow-papel sm:col-span-2">Trilha Homo Ludens: Huizinga como raiz para caminhar desde o Sul.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="circulacao" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.8fr_1.2fr]">
+        <div>
+          <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-folha">Circulação</p>
+          <h2 class="display mt-5 text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">A pergunta circula por projetos, instituições e territórios.</h2>
+          <p class="mt-6 text-lg leading-8 text-tinta">Cada frente abre um lugar de escuta e ação para a mesma pergunta: como o esporte pode produzir aprendizagem, cultura, inovação e desenvolvimento humano?</p>
+        </div>
+        <div class="space-y-4">
+          <article class="grid gap-4 border-t border-grafite py-5 md:grid-cols-[.35fr_1fr]"><p class="mono text-xs uppercase tracking-[.22em] text-folha">laboratório</p><div><h3 class="text-2xl font-black">SportsCoLab</h3><p class="mt-2 leading-7 text-tinta">Laboratorio de inovação esportiva. Papel: cofundador e Diretor de Ecossistemas e Cultura de Inovação.</p></div></article>
+          <article class="grid gap-4 border-t border-grafite py-5 md:grid-cols-[.35fr_1fr]"><p class="mono text-xs uppercase tracking-[.22em] text-terra">formação</p><div><h3 class="text-2xl font-black">Agência Gondwana FC / A Bola Conecta</h3><p class="mt-2 leading-7 text-tinta">Formação, consultoria, audiovisual, futebol, cultura e educação. Papel: Diretor de Inovação e Tecnologia, produtor, metodólogo e articulador estratégico.</p></div></article>
+          <article class="grid gap-4 border-t border-grafite py-5 md:grid-cols-[.35fr_1fr]"><p class="mono text-xs uppercase tracking-[.22em] text-quadra">associação</p><div><h3 class="text-2xl font-black">Associação Cultural e Desportiva Gondwana</h3><p class="mt-2 leading-7 text-tinta">Organização sem fins lucrativos no Brasil para cultura, esporte, direitos humanos, educação e impacto territorial. Papel: presidente e articulador institucional.</p></div></article>
+          <article class="grid gap-4 border-y border-grafite py-5 md:grid-cols-[.35fr_1fr]"><p class="mono text-xs uppercase tracking-[.22em] text-travessia">arquivo</p><div><h3 class="text-2xl font-black">Pesquisas e observatórios</h3><p class="mt-2 leading-7 text-tinta">Estudos, levantamentos e projetos de inteligencia aplicada sobre esporte, território, políticas públicas e inovação. Radar Futsal SP fica pausado como chamada pública neste momento.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="colaborar" class="px-5 py-16 md:px-8 md:py-24">
+      <div class="mx-auto max-w-7xl overflow-hidden rounded-[2.4rem] border border-grafite bg-claro shadow-papel">
+        <div class="grid gap-0 lg:grid-cols-[1fr_.72fr]">
+          <div class="p-7 md:p-12">
+            <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-quadra">Colaborar</p>
+            <h2 class="display mt-5 max-w-4xl text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">Quando uma pergunta precisa virar método, podemos colaborar.</h2>
+            <p class="mt-7 max-w-3xl text-xl leading-8 text-grafite/82">Se uma instituição, projeto, comunidade ou evento precisa pensar esporte, educação e cultura com escuta, critério e continuidade, podemos conversar.</p>
+            <p class="mt-5 max-w-3xl text-xl leading-8 text-grafite/82">A colaboracao pode nascer de uma palestra, uma aula, uma oficina, uma consultoria estratégica, uma curadoria, uma pesquisa aplicada ou o desenho de um programa.</p>
+            <form id="form-colaborar" action="https://formsubmit.co/seba.3@sportscolab.co" method="POST" class="mt-8 grid gap-4" accept-charset="UTF-8">
+              <input type="hidden" name="_subject" value="Novo contato pelo Homo Ludens Blog" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input id="form-next" type="hidden" name="_next" value="https://homoludens.blog/obrigado.html" />
+              <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <div class="grid gap-4 md:grid-cols-2">
+                <label><span class="form-label">Nome</span><input class="form-field rounded-2xl" type="text" name="nome" autocomplete="name" required /></label>
+                <label><span class="form-label">Email</span><input class="form-field rounded-2xl" type="email" name="email" autocomplete="email" required /></label>
+              </div>
+              <div class="grid gap-4 md:grid-cols-2">
+                <label><span class="form-label">Instituição ou projeto</span><input class="form-field rounded-2xl" type="text" name="instituicao_ou_projeto" autocomplete="organization" /></label>
+                <label><span class="form-label">Tipo de convite</span><select class="form-field rounded-2xl" name="tipo_de_convite" required><option value="">Escolha uma opção</option><option>Palestra ou aula</option><option>Oficina ou formação</option><option>Consultoria ou desenho de programa</option><option>Curadoria ou pesquisa aplicada</option><option>Entrevista, mídia ou podcast</option><option>Outro</option></select></label>
+              </div>
+              <label><span class="form-label">Mensagem</span><textarea class="form-field min-h-40 rounded-[1.25rem]" name="mensagem" required placeholder="Conte brevemente o contexto, a cidade, a data desejada e o que você imagina construir junto."></textarea></label>
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <p class="form-hint">A mensagem chega em seba.3@sportscolab.co. Na primeira submissão, o serviço pode pedir confirmação do email destinatário.</p>
+                <button type="submit" class="inline-flex min-h-12 items-center justify-center rounded-full bg-grafite px-6 py-3 text-sm font-black text-claro hover:bg-folha">Enviar convite</button>
+              </div>
+            </form>
+          </div>
+          <aside class="paper-grid border-t border-grafite p-7 md:p-12 lg:border-l lg:border-t-0">
+            <ul class="space-y-5 text-lg font-bold">
+              <li>Palestras e aulas</li>
+              <li>Oficinas e formacoes</li>
+              <li>Consultoria e desenho de programas</li>
+              <li>Curadoria e pesquisa aplicada</li>
+            </ul>
+            <p class="mono mt-10 text-sm leading-7 text-tinta">Para convites institucionais, prefira email. Para conversas abertas e referências, as redes também sao caminho.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="px-5 pb-16 md:px-8 md:pb-24">
+      <div class="mx-auto max-w-7xl rounded-[2.4rem] bg-grafite p-7 text-claro md:p-12">
+        <p class="mono text-xs font-semibold uppercase tracking-[.24em] text-sol">Contato</p>
+        <h2 class="display mt-5 max-w-4xl text-3xl font-semibold leading-tight tracking-[-.025em] md:text-5xl">Quer pensar junto?</h2>
+        <p class="mt-7 max-w-3xl text-xl leading-8 text-claro/76">Para convites, aulas, palestras, projetos, pesquisas e colaboracoes institucionais, use o formulário de colaboração. Para acompanhar notas, perguntas e processos, siga os canais de Homoludens.</p>
+        <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <a class="rounded-2xl border border-claro/20 p-5 font-bold hover:bg-claro/10" href="#colaborar">Formulário de colaboração</a>
+          <a class="rounded-2xl border border-claro/20 p-5 font-bold hover:bg-claro/10" href="https://instagram.com/homoludens.blog" target="_blank" rel="noopener noreferrer">@homoludens.blog</a>
+          <a class="rounded-2xl border border-claro/20 p-5 font-bold hover:bg-claro/10" href="https://instagram.com/homoludens3" target="_blank" rel="noopener noreferrer">@homoludens3</a>
+          <a class="rounded-2xl border border-claro/20 p-5 font-bold hover:bg-claro/10" href="https://www.linkedin.com/in/homoludens3" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="display mt-12 text-2xl font-semibold text-sol">Onde tem jogo, tem mundo tentando se explicar.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hl-footer" role="contentinfo" aria-label="Rodapé do Homo Ludens Blog">
+    <div class="hl-footer__wrap">
+      <div class="hl-footer__grid">
+        <section aria-label="Identidade do site">
+          <a class="hl-footer__wordmark" href="./">Homo<br>Ludens</a>
+          <p class="hl-footer__tagline">Um caderno público para pensar o mundo pelo jogo.</p>
+          <p class="hl-footer__micro">2026 · edição em campo</p>
+        </section>
+        <nav aria-label="Navegação do rodapé">
+          <p class="hl-footer__eyebrow">Navegação</p>
+          <ul class="hl-footer__list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="index.html#caderno">Posts e arquivo</a></li>
+            <li><a href="index.html#colaborar">Colaborar</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Publicação responsável">
+          <p class="hl-footer__eyebrow">Publicação responsável</p>
+          <ul class="hl-footer__list">
+            <li><a href="mapa-do-site.html">Mapa do site</a></li>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="sitemap.xml">Sitemap XML</a></li>
+            <li><a href="robots.txt">Robots.txt</a></li>
+            <li><a href="llms.txt">LLMS.txt</a></li>
+          </ul>
+        </nav>
+        <section aria-label="Manifesto curto">
+          <p class="hl-footer__eyebrow">Manifesto curto</p>
+          <p class="hl-footer__manifesto">Onde tem jogo, tem corpo, território, memória e linguagem tentando explicar o mundo sem tirar os pés do chão.</p>
+          <p class="hl-footer__stamp">Português para construir casa. Espanhol para abrir janela.</p>
+        </section>
+      </div>
+      <div class="hl-footer__bottom">
+        <span>© 2026 Homo Ludens Blog · Sebastián Acevedo Vásquez</span>
+        <span>Feito com cuidado, publicado com critério.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (window.lucide) window.lucide.createIcons();
+
+    (function () {
+      var toggle = document.querySelector('[data-mobile-menu-toggle]');
+      var panel = document.getElementById('mobile-menu-panel');
+      var backdrop = document.querySelector('[data-mobile-menu-backdrop]');
+      if (!toggle || !panel || !backdrop) return;
+      function setMenu(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        panel.hidden = !open;
+        backdrop.hidden = !open;
+        document.body.classList.toggle('menu-open', open);
+      }
+      toggle.addEventListener('click', function () { setMenu(toggle.getAttribute('aria-expanded') !== 'true'); });
+      backdrop.addEventListener('click', function () { setMenu(false); });
+      panel.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', function () { setMenu(false); }); });
+      document.addEventListener('keydown', function (event) { if (event.key === 'Escape') setMenu(false); });
+    })();
+      var next = document.getElementById('form-next');
+      if (next) {
+        var path = window.location.pathname.indexOf('/homoludens-blog/') === 0 ? '/homoludens-blog/' : '/';
+        next.value = window.location.origin + path + 'obrigado.html';
+      }
+    });
+  </script>
+</body>
+</html>

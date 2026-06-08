@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#F2EDE3" />
+  <title>Manual de marca - Homo Ludens Blog</title>
+  <meta name="description" content="Manual visual de marca do Homo Ludens Blog." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,760&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --papel: #F2EDE3;
+      --claro: #FFF9ED;
+      --grafite: #2B2B2B;
+      --tinta: #6E675B;
+      --linha: #D8CDB8;
+      --folha: #3B6E2A;
+      --terra: #D87A3B;
+      --quadra: #A8392C;
+      --sol: #F6C026;
+      --travessia: #2C6BB5;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 10% 8%, rgba(246,192,38,.24), transparent 22%), radial-gradient(circle at 88% 6%, rgba(59,110,42,.14), transparent 30%), linear-gradient(180deg, var(--claro), var(--papel) 54%, #EADFCA);
+      color: var(--grafite);
+      font-family: 'Source Sans 3', Verdana, sans-serif;
+    }
+    a { color: inherit; }
+    .display { font-family: 'Fraunces', Georgia, serif; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+    .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(43,43,43,.14); background: rgba(242,237,227,.9); backdrop-filter: blur(14px); }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; }
+    .brand { display: flex; min-width: 0; align-items: center; gap: 12px; text-decoration: none; }
+    .seal { display: grid; width: 44px; height: 44px; flex: 0 0 auto; place-items: center; border: 1px solid var(--grafite); border-radius: 999px; background: var(--claro); font-family: 'Fraunces', Georgia, serif; font-weight: 760; }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .nav a, .pill { display: inline-flex; min-height: 40px; align-items: center; border: 1px solid rgba(43,43,43,.18); border-radius: 999px; background: rgba(255,249,237,.78); padding: 0 14px; text-decoration: none; font-size: 13px; font-weight: 800; }
+    .hero { padding: 64px 0 42px; }
+    .eyebrow { color: var(--quadra); font-size: 12px; font-weight: 800; letter-spacing: .24em; text-transform: uppercase; }
+    h1 { max-width: 980px; margin: 14px 0 0; font-size: clamp(44px, 8vw, 92px); line-height: .92; letter-spacing: -.055em; }
+    .lead { max-width: 780px; margin: 22px 0 0; color: rgba(43,43,43,.78); font-size: 22px; line-height: 1.45; }
+    section { padding: 34px 0; scroll-margin-top: 92px; }
+    .section-title { display: grid; gap: 10px; margin-bottom: 18px; }
+    .section-title h2 { margin: 0; font-size: clamp(32px, 4vw, 54px); line-height: 1; letter-spacing: -.035em; }
+    .grid { display: grid; gap: 16px; }
+    .cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .cols-5 { grid-template-columns: repeat(5, minmax(0,1fr)); }
+    .card { border: 1px solid var(--linha); border-radius: 24px; background: rgba(255,249,237,.86); padding: 22px; box-shadow: 0 24px 70px rgba(43,43,43,.09); }
+    .swatch { min-height: 150px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 22px; padding: 16px; color: var(--grafite); }
+    .swatch.dark { color: var(--claro); }
+    .swatch p { margin: 0; }
+    .hex { font-weight: 900; }
+    .role { color: inherit; opacity: .78; font-size: 13px; line-height: 1.3; }
+    .contrast { display: grid; gap: 10px; }
+    .pair { display: flex; align-items: center; justify-content: space-between; gap: 10px; border: 1px solid var(--linha); border-radius: 14px; background: var(--claro); padding: 12px 14px; }
+    .pass { color: var(--folha); font-weight: 900; }
+    .warn { color: var(--quadra); font-weight: 900; }
+    .type-specimen { background: var(--grafite); color: var(--claro); }
+    .type-specimen h3 { margin: 0; color: var(--sol); font-size: 15px; letter-spacing: .18em; text-transform: uppercase; }
+    .type-specimen .big { margin: 12px 0 0; font-size: clamp(38px, 6vw, 72px); line-height: .96; letter-spacing: -.04em; }
+    .type-specimen .copy { max-width: 760px; color: rgba(255,249,237,.76); font-size: 20px; line-height: 1.5; }
+    .photo-grid { grid-template-columns: 1.25fr .8fr .8fr; align-items: stretch; }
+    .photo { position: relative; overflow: hidden; min-height: 270px; border-radius: 24px; background: var(--linha); }
+    .photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.96) contrast(1.04) sepia(.08); }
+    .photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(43,43,43,.56)); }
+    .photo span { position: absolute; left: 16px; right: 16px; bottom: 16px; z-index: 1; color: var(--claro); font-weight: 900; }
+    .button-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; border-radius: 999px; padding: 0 18px; text-decoration: none; font-weight: 900; }
+    .btn-primary { border: 1px solid var(--grafite); background: var(--grafite); color: var(--claro); }
+    .btn-secondary { border: 1px solid var(--grafite); background: var(--claro); color: var(--grafite); }
+    .btn-sun { border: 1px solid var(--sol); background: var(--sol); color: var(--grafite); }
+    .component-card { display: grid; gap: 14px; }
+    .publication { display: grid; grid-template-columns: .78fr 1fr; gap: 14px; align-items: stretch; }
+    .preview { display: grid; min-height: 170px; place-items: center; border-radius: 18px; background: radial-gradient(circle at 26% 20%, rgba(246,192,38,.72), transparent 34%), linear-gradient(135deg, var(--quadra), var(--folha)); color: rgba(255,249,237,.88); font-family: 'Fraunces', Georgia, serif; font-size: 56px; font-weight: 760; }
+    .publication h3 { margin: 0; font-size: 30px; line-height: 1.05; }
+    .publication p { margin: 10px 0 0; color: var(--tinta); line-height: 1.55; }
+    blockquote { margin: 0; border-left: 6px solid var(--quadra); padding-left: 18px; font-size: 30px; line-height: 1.15; }
+    .callout { background: var(--sol); color: var(--grafite); }
+    .callout p { margin: 8px 0 0; font-size: 18px; line-height: 1.45; }
+    .form-demo label { display: grid; gap: 6px; color: var(--tinta); font-size: 12px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
+    .field { min-height: 48px; border: 1px solid rgba(43,43,43,.24); border-radius: 16px; background: var(--claro); padding: 12px 14px; color: var(--grafite); font: inherit; }
+    .footer-demo { border-top: 1px solid var(--linha); color: var(--tinta); padding-top: 18px; }
+    @media (max-width: 960px) { .cols-3, .cols-5, .photo-grid, .publication { grid-template-columns: 1fr; } .cols-2 { grid-template-columns: 1fr; } }
+    @media (max-width: 560px) { .nav { display: none; } h1 { font-size: 46px; } .lead { font-size: 19px; } .card { padding: 18px; } .photo { min-height: 220px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="../" aria-label="Voltar ao Homo Ludens Blog"><span class="seal">HL</span><span><strong>Homo Ludens Blog</strong><br><span class="mono" style="font-size:11px;color:var(--tinta);letter-spacing:.08em;text-transform:uppercase;">manual visual</span></span></a>
+      <nav class="nav" aria-label="Navegação do manual"><a href="#paleta">Paleta</a><a href="#foto">Fotografia</a><a href="#componentes">Componentes</a><a href="../tipografias/">Tipografia</a><a href="../">Site</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <p class="mono eyebrow">Manual de marca</p>
+      <h1 class="display">Uma marca para pensar com o corpo.</h1>
+      <p class="lead">Esta pagina traduz a identidade do Homo Ludens Blog em decisoes visuais: cor, fotografia e componentes. E uma ferramenta de criterio, nao uma vitrine decorativa.</p>
+    </section>
+
+    <section id="paleta" class="wrap">
+      <div class="section-title"><p class="mono eyebrow">01 / Paleta</p><h2 class="display">Papel, cancha, campo, sol e travessia.</h2></div>
+      <div class="grid cols-5">
+        <div class="swatch" style="background:var(--papel)"><p class="hex">Papel<br>#F2EDE3</p><p class="role">fundo principal</p></div>
+        <div class="swatch" style="background:var(--claro)"><p class="hex">Claro<br>#FFF9ED</p><p class="role">cards e formularios</p></div>
+        <div class="swatch dark" style="background:var(--grafite)"><p class="hex">Grafite<br>#2B2B2B</p><p class="role">texto e decisoes</p></div>
+        <div class="swatch dark" style="background:var(--folha)"><p class="hex">Folha<br>#3B6E2A</p><p class="role">campo e continuidade</p></div>
+        <div class="swatch dark" style="background:var(--quadra)"><p class="hex">Quadra<br>#A8392C</p><p class="role">corpo e intensidade</p></div>
+        <div class="swatch" style="background:var(--terra)"><p class="hex">Terra<br>#D87A3B</p><p class="role">rua e calor visual</p></div>
+        <div class="swatch" style="background:var(--sol)"><p class="hex">Sol<br>#F6C026</p><p class="role">foco e descoberta</p></div>
+        <div class="swatch dark" style="background:var(--travessia)"><p class="hex">Travessia<br>#2C6BB5</p><p class="role">ponte e circulacao</p></div>
+        <div class="swatch" style="background:var(--linha)"><p class="hex">Linha<br>#D8CDB8</p><p class="role">bordas e grade</p></div>
+        <div class="swatch" style="background:var(--tinta);color:var(--claro)"><p class="hex">Tinta<br>#6E675B</p><p class="role">texto secundario</p></div>
+      </div>
+      <div class="grid cols-2" style="margin-top:16px;">
+        <div class="card contrast"><strong>Contrastes aprovados</strong><div class="pair"><span>Grafite sobre papel</span><span class="pass">12.14</span></div><div class="pair"><span>Tinta sobre claro</span><span class="pass">5.33</span></div><div class="pair"><span>Claro sobre quadra</span><span class="pass">6.09</span></div><div class="pair"><span>Claro sobre folha</span><span class="pass">5.80</span></div><div class="pair"><span>Grafite sobre sol</span><span class="pass">8.42</span></div></div>
+        <div class="card contrast"><strong>Regras de alerta</strong><div class="pair"><span>Claro sobre terra</span><span class="warn">2.96</span></div><div class="pair"><span>Sol sobre claro</span><span class="warn">1.60</span></div><div class="pair"><span>Folha sobre grafite</span><span class="warn">2.33</span></div><div class="pair"><span>Maximo de acentos fortes por tela</span><span class="pass">2</span></div></div>
+      </div>
+    </section>
+
+    <section id="tipo" class="wrap">
+      <div class="card type-specimen"><h3 class="mono">Tipografia fechada</h3><p class="display big">Fraunces pensa com o corpo.</p><p class="copy">Source Sans 3 sustenta a leitura longa. IBM Plex Mono marca datas, dominios e pequenos registros de arquivo.</p></div>
+    </section>
+
+    <section id="foto" class="wrap">
+      <div class="section-title"><p class="mono eyebrow">02 / Fotografia</p><h2 class="display">Imagem como prova de mundo.</h2></div>
+      <div class="grid photo-grid">
+        <figure class="photo"><img src="../assets/homoludens-roda-a-bola-conecta.jpg" alt="Roda de participantes em atividade de A Bola Conecta" loading="lazy"><span>Roda, escuta e corpo coletivo</span></figure>
+        <figure class="photo"><img src="../assets/homoludens-cabeca-praia.jpg" alt="Pessoa equilibra bola na cabeca em ambiente de praia" loading="lazy"><span>Gesto antes da palavra</span></figure>
+        <figure class="photo"><img src="../assets/prova2-mural-cidade.jpg" alt="Mural urbano usado como imagem de territorio e memoria" loading="lazy"><span>Territorio como arquivo</span></figure>
+      </div>
+    </section>
+
+    <section id="componentes" class="wrap">
+      <div class="section-title"><p class="mono eyebrow">03 / Componentes</p><h2 class="display">Poucos blocos, bem reconheciveis.</h2></div>
+      <div class="grid cols-2">
+        <article class="card component-card"><p class="mono eyebrow">Botoes</p><div class="button-row"><a class="btn btn-primary" href="#">Convidar</a><a class="btn btn-secondary" href="#">Voltar ao caderno</a><a class="btn btn-sun" href="#">Propor colaboracao</a></div></article>
+        <article class="card publication"><div class="preview">HL</div><div><p class="mono eyebrow">Publicacao externa</p><h3 class="display">Um arquivo vivo de perguntas em movimento.</h3><p>Card com dominio, titulo, descricao e sinal visual. Deve dar realidade sem virar bloco pesado.</p></div></article>
+        <article class="card"><blockquote class="display">Onde tem jogo, tem mundo tentando se explicar.</blockquote></article>
+        <article class="card callout"><p class="mono eyebrow" style="color:var(--grafite);">Nota editorial</p><p>Callout serve para contexto, criterio e leitura de margem. Nao substitui paragrafo.</p></article>
+        <article class="card form-demo"><p class="mono eyebrow">Formulario</p><label>Nome<input class="field" value="Sebastián" aria-label="Nome"></label><label style="margin-top:12px;">Mensagem<textarea class="field" aria-label="Mensagem">Quero propor uma colaboracao.</textarea></label><a class="btn btn-primary" style="margin-top:14px;" href="#">Enviar convite</a></article>
+        <article class="card footer-demo"><strong>Homo Ludens Blog</strong><p>Caderno publico de Sebastián Acevedo Vásquez.</p><p><a href="../">Inicio</a> · <a href="../tipografias/">Tipografia</a> · <a href="#paleta">Paleta</a></p></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

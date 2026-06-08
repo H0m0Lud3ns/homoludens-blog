@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#F2EDE3" />
+  <title>Prova tipográfica - Homo Ludens Blog</title>
+  <meta name="description" content="Comparação tipográfica para fechamento da identidade do Homo Ludens Blog." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,520;9..144,0,700;9..144,1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:opsz,ital,wght@6..72,0,400;6..72,0,500;6..72,0,700;6..72,1,400&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --papel: #F2EDE3;
+      --claro: #FFF9ED;
+      --grafite: #2B2B2B;
+      --tinta: #6E675B;
+      --linha: #D8CDB8;
+      --folha: #3B6E2A;
+      --terra: #D87A3B;
+      --quadra: #A8392C;
+      --sol: #F6C026;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 12% 8%, rgba(246,192,38,.25), transparent 24%), radial-gradient(circle at 90% 20%, rgba(59,110,42,.14), transparent 30%), linear-gradient(180deg, var(--claro), var(--papel) 58%, #EADFCA);
+      color: var(--grafite);
+      font-family: 'Source Sans 3', Verdana, sans-serif;
+    }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+    .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 28px 0 18px; border-bottom: 1px solid rgba(43,43,43,.14); }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+    .seal { display: grid; width: 44px; height: 44px; place-items: center; border: 1px solid var(--grafite); border-radius: 999px; background: var(--claro); font-family: 'Fraunces', Georgia, serif; font-weight: 700; }
+    .back { display: inline-flex; min-height: 44px; align-items: center; border: 1px solid var(--grafite); border-radius: 999px; padding: 0 18px; background: var(--grafite); color: var(--claro); text-decoration: none; font-weight: 900; }
+    .hero { padding: 54px 0 34px; }
+    .eyebrow { color: var(--quadra); font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
+    .hero h1 { max-width: 980px; margin: 14px 0 0; font-family: 'Fraunces', Georgia, serif; font-size: clamp(42px, 7vw, 84px); line-height: .92; letter-spacing: -.045em; }
+    .hero p { max-width: 760px; margin: 22px 0 0; color: rgba(43,43,43,.76); font-size: 22px; line-height: 1.45; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; padding: 28px 0 48px; }
+    .card { display: flex; min-height: 760px; flex-direction: column; border: 1px solid var(--linha); border-radius: 28px; background: rgba(255,249,237,.88); padding: 24px; box-shadow: 0 24px 70px rgba(43,43,43,.10); }
+    .card.current { border-color: var(--grafite); background: var(--claro); }
+    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--linha); padding-bottom: 18px; }
+    .font-name { margin: 0; font-size: 12px; font-weight: 900; letter-spacing: .2em; text-transform: uppercase; }
+    .tag { border-radius: 999px; background: var(--sol); padding: 5px 9px; font-size: 11px; font-weight: 900; }
+    .sample { flex: 1; padding-top: 22px; }
+    .sample h2 { margin: 0; font-size: clamp(38px, 4.2vw, 58px); line-height: .96; letter-spacing: -.045em; }
+    .sample .lead { margin: 22px 0 0; color: rgba(43,43,43,.78); font-size: 21px; line-height: 1.45; }
+    .sample h3 { margin: 34px 0 0; font-size: 31px; line-height: 1.06; letter-spacing: -.025em; }
+    .sample p { margin: 16px 0 0; color: var(--tinta); font-size: 17px; line-height: 1.65; }
+    blockquote { margin: 26px 0 0; border-left: 5px solid var(--quadra); padding: 4px 0 4px 18px; color: var(--grafite); font-size: 24px; line-height: 1.22; }
+    .fraunces .display { font-family: 'Fraunces', Georgia, serif; }
+    .besley .display { font-family: 'Besley', Georgia, serif; }
+    .newsreader .display { font-family: 'Newsreader', Georgia, serif; }
+    .notes { margin: 0 0 54px; border: 1px solid var(--grafite); border-radius: 28px; background: var(--grafite); color: var(--claro); padding: 28px; }
+    .notes h2 { margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 34px; line-height: 1; }
+    .notes ul { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin: 22px 0 0; padding: 0; list-style: none; }
+    .notes li { border: 1px solid rgba(255,249,237,.18); border-radius: 18px; padding: 16px; color: rgba(255,249,237,.78); line-height: 1.45; }
+    @media (max-width: 940px) {
+      .grid { grid-template-columns: 1fr; }
+      .card { min-height: auto; }
+      .notes ul { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .top { align-items: flex-start; }
+      .back { padding: 0 14px; font-size: 14px; }
+      .hero { padding-top: 36px; }
+      .hero h1 { font-size: 44px; }
+      .hero p { font-size: 19px; }
+      .card { padding: 18px; border-radius: 22px; }
+      .sample h2 { font-size: 40px; }
+      .sample h3 { font-size: 27px; }
+      blockquote { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="../" aria-label="Voltar ao Homo Ludens Blog">
+        <span class="seal">HL</span>
+        <span><strong>Homo Ludens Blog</strong><br><span class="mono" style="font-size:11px;color:var(--tinta);letter-spacing:.08em;text-transform:uppercase;">prova tipográfica</span></span>
+      </a>
+      <a class="back" href="../">Voltar ao site</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <p class="mono eyebrow">Decisão de marca</p>
+      <h1>Fraunces fica como voz do caderno.</h1>
+      <p>A comparação fica como registro do processo. A escolha final privilegia uma voz viva, editorial e corporal para pensar esporte, educação, território e escrita pública.</p>
+    </section>
+
+    <section class="wrap grid" aria-label="Comparação de fontes">
+      <article class="card current fraunces">
+        <div class="card-top"><p class="mono font-name">Fraunces</p><span class="tag">decisão final</span></div>
+        <div class="sample">
+          <h2 class="display">Sebastián pensa com a bola em campo aberto.</h2>
+          <p class="lead">Editorial, viva e um pouco irregular. Parece caderno de ensaio, manifesto e jogo ao mesmo tempo.</p>
+          <h3 class="display">Um arquivo vivo de perguntas em movimento.</h3>
+          <p>Fraunces segura bem títulos grandes porque tem contraste e presença. Depois da redução de tamanho, ficou menos barulhenta e mais madura, sem perder identidade.</p>
+          <blockquote class="display">Onde tem jogo, tem mundo tentando se explicar.</blockquote>
+        </div>
+      </article>
+
+      <article class="card besley">
+        <div class="card-top"><p class="mono font-name">Besley</p><span class="tag">alternativa A</span></div>
+        <div class="sample">
+          <h2 class="display">Sebastián pensa com a bola em campo aberto.</h2>
+          <p class="lead">Mais clube, memória e literatura popular. Tem algo de esporte antigo, placa, camisa e arquivo afetivo.</p>
+          <h3 class="display">Um arquivo vivo de perguntas em movimento.</h3>
+          <p>Besley aproxima o blog de uma tradição mais quente. Menos experimental que Fraunces, mas com uma gravidade boa para falar de futebol, cultura e território.</p>
+          <blockquote class="display">Onde tem jogo, tem mundo tentando se explicar.</blockquote>
+        </div>
+      </article>
+
+      <article class="card newsreader">
+        <div class="card-top"><p class="mono font-name">Newsreader</p><span class="tag">alternativa B</span></div>
+        <div class="sample">
+          <h2 class="display">Sebastián pensa com a bola em campo aberto.</h2>
+          <p class="lead">Mais jornal, crônica e ensaio público. É a opção mais intelectual e silenciosa da comparação.</p>
+          <h3 class="display">Um arquivo vivo de perguntas em movimento.</h3>
+          <p>Newsreader dá leitura de publicação séria. Perde um pouco de corpo lúdico, mas ganha sobriedade, ritmo editorial e autoridade de texto longo.</p>
+          <blockquote class="display">Onde tem jogo, tem mundo tentando se explicar.</blockquote>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap notes">
+      <h2>Critério para fechar</h2>
+      <ul>
+        <li><strong>Fraunces</strong>: melhor se a marca deve ser autoral, corporal e viva.</li>
+        <li><strong>Besley</strong>: melhor se a marca deve puxar futebol, memória, clube e tradição popular.</li>
+        <li><strong>Newsreader</strong>: melhor se a marca deve parecer mais jornal, ensaio e publicação intelectual.</li>
+        <li>As três preservam acentos e português/espanhol sem ruído.</li>
+        <li>Para manual de marca, eu escolheria uma só fonte de título e manteria Source Sans 3 no corpo.</li>
+        <li>Decisão fechada: Fraunces segue como voz titular do Homo Ludens Blog.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

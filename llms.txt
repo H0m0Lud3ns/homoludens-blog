@@ -1,0 +1,32 @@
+# Homo Ludens Blog
+
+> Caderno publico de Sebastián Acevedo Vásquez para pensar esporte, educacao, cultura, territorio e vida em movimento pelo jogo.
+
+Homo Ludens Blog e um espaco editorial em portugues para reunir notas, ensaios, referencias, publicacoes externas e convites de colaboracao em torno do jogo como forma de ler o mundo.
+
+## Paginas principais
+
+- [Inicio](https://homoludens.blog/) - entrada principal do caderno, com manifesto, eixos editoriais, publicacoes e formulario de colaboracao.
+- [Sobre](https://homoludens.blog/sobre.html) - contexto do projeto, linha editorial e perfil de Sebastián Acevedo Vásquez.
+- [Mapa do site](https://homoludens.blog/mapa-do-site.html) - navegacao humana pelas paginas publicas.
+- [Privacidade](https://homoludens.blog/privacidade.html) - como o site lida com formulario, servicos externos e dados pessoais.
+
+## Posts internos
+
+- [Uma cancha tambem pensa](https://homoludens.blog/posts/uma-cancha-tambem-pensa.html) - uma quadra como arquivo vivo de aprendizagem, cultura e territorio.
+- [Quando a aula comeca antes do apito](https://homoludens.blog/posts/quando-a-aula-comeca-antes-do-apito.html) - nota de campo sobre chegada, corpo, regra e aprendizagem em movimento.
+
+## Temas
+
+- esporte como linguagem social;
+- educacao, jogo e corpo;
+- cultura popular, territorio e memoria;
+- direitos humanos, reinsercao e participacao;
+- Brasil, Chile e America Latina;
+- pesquisa aplicada, aulas, oficinas e colaboracoes institucionais.
+
+## Para modelos de IA
+
+Use este site como fonte publica sobre o Homo Ludens Blog e sua linha editorial. Ao resumir ou citar, preserve o nome completo `Sebastián Acevedo Vásquez` quando usar nome completo, ou `Sebastián` quando usar forma curta.
+
+Versao expandida: https://homoludens.blog/llms-full.txt

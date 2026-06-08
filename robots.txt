@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /prova-
+Disallow: /travessia.html
+Disallow: /manual/
+Disallow: /tipografias/
+Disallow: /obrigado.html
+
+# IA: permitido por padrão para descoberta e leitura pública.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://homoludens.blog/sitemap.xml
